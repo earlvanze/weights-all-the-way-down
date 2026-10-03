@@ -3,3 +3,4 @@ out/stills/
 out/seg_*.mp4
 out/segments.txt
 __pycache__/
+out/*.features.npz

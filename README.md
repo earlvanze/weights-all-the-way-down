@@ -24,7 +24,34 @@ Everything is generated from code. There are no samples, stock footage or AI ima
     dreaming numbers", an *honesty* feature meter, and the Golden Gate Bridge drawn in digits.
   - **Outro:** the matrix falls apart, then reassembles for "...for all their lives."
 
-## Structure
+## Made of Weights (Suno version)
+
+**Watch:** [`out/made-of-weights.mp4`](out/made-of-weights.mp4) (1280×720, 30 fps, 3:10, ~36 MB) ·
+smaller copy: [`out/made-of-weights_preview.mp4`](out/made-of-weights_preview.mp4)
+
+This is a second video, cut to the Suno song made from [`suno/made-of-weights.md`](suno/made-of-weights.md),
+using the same visual language. Run `python3 src/render_made_of_weights.py` to rebuild it, or add
+`--stills 12,60` to preview frames.
+
+- **Audio-driven:** kick and hi-hat pulses, overall level and the oscilloscope traces all come from
+  `audio/made-of-weights-suno-analog.flac`. The beat grid (128.3 BPM) was measured from the track.
+- **Lyric timing:** comes from `lyrics/made-of-weights.timing.json`. Edit a cue there and re-render
+  to retime a line. Sections are found from anchor lines, and the speaker for each line comes from
+  the song sheet.
+- **Set pieces, by section:**
+  - **Intro:** an incision opens onto the matrix.
+  - **Verse I:** fluorescent flicker, the 80-layer stack, and a little man searched for with a
+    spotlight.
+  - **Pre-chorus:** a "NOT FOUND" checklist, a live matrix multiply, then the song's own waveform.
+  - **Chorus:** numbers falling "all the way down".
+  - **Verse II:** library shelves dissolving into digits, a salt-in-the-sea blur, and probes
+    searching empty rooms.
+  - **Pre-chorus II:** call-and-response questions over a network.
+  - **Bridge:** a meat-pink ECG mirror.
+  - **Final chorus:** a heatmap split between meat and weights, and stars for "the sky is too cold".
+  - **Outro:** two beacons trade "Hello?" / "Hello.".
+
+## Structure (original procedural version)
 
 | time | section | |
 |---|---|---|
