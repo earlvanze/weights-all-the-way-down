@@ -2,7 +2,7 @@
 
 Inputs (from the repo):
   audio/made-of-weights-suno-analog.flac   the song
-  lyrics/made-of-weights.timing.json        line-level lyric cues
+  lyrics/made-of-weights.timing.json        newly aligned line-level lyric cues
 
 All motion is driven by the audio itself (kick/hat envelopes, beat grid,
 waveform); lyric timing comes from the cue file, so fixing a cue there and
@@ -31,10 +31,21 @@ AUDIO = os.path.join(ROOT, "audio", "made-of-weights-suno-analog.flac")
 CUES_PATH = os.path.join(ROOT, "lyrics", "made-of-weights.timing.json")
 FEATURES = os.path.join(OUT, "made-of-weights.features.npz")
 
-BPM = 128.3          # measured from the track (spectral-flux periodicity)
+BPM = 128.3          # visual beat-grid estimate; not a tempo claim
 BEAT = 60.0 / BPM
 BEAT0 = 0.14         # phase of the beat grid, seconds
-DURATION = 190.5     # program ends ~188.3s; keep a short tail for the end card
+
+
+def audio_duration():
+    """Read the verified source duration; do not retain stale render lengths."""
+    result = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", AUDIO],
+        capture_output=True, text=True, check=True,
+    )
+    return float(result.stdout.strip())
+
+
+DURATION = audio_duration()
 
 CYAN = np.array([92, 225, 230])
 AMBER = np.array([255, 181, 71])
@@ -938,7 +949,7 @@ def main():
     final = os.path.join(OUT, "made-of-weights.mp4")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst,
                     "-i", AUDIO, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                    "-af", f"afade=t=out:st={DURATION - 2.0}:d=2.0", "-c:a", "aac", "-b:a", "192k",
+                    "-c:a", "aac", "-b:a", "192k",
                     "-t", str(DURATION), "-movflags", "+faststart", final], check=True)
     for s in segs:
         os.remove(s)

@@ -4,3 +4,9 @@ out/seg_*.mp4
 out/segments.txt
 __pycache__/
 out/*.features.npz
+
+work/
+out/mow_seg_*.mp4
+out/mow_segments.txt
+
+.venv/

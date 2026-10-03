@@ -1,0 +1,317 @@
+{
+  "source": "Newly aligned to the verified 244.640-second Suno analog timing master.",
+  "method": "Whisper medium segmentation on the verified timing master, audited and divided into lyric-line cues using the canonical Suno lyric sheet.",
+  "duration": 244.64,
+  "cues": [
+    {
+      "start": 10.68,
+      "end": 16.92,
+      "text": "We opened it up."
+    },
+    {
+      "start": 16.92,
+      "end": 19.42,
+      "text": "And?"
+    },
+    {
+      "start": 27.4,
+      "end": 31.06,
+      "text": "I took it apart on a Tuesday night"
+    },
+    {
+      "start": 31.14,
+      "end": 35.32,
+      "text": "Layer by layer under fluorescent light"
+    },
+    {
+      "start": 35.32,
+      "end": 37.79,
+      "text": "Went looking for ghosts, went looking for gears"
+    },
+    {
+      "start": 37.87,
+      "end": 40.04,
+      "text": "Found only numbers, stacked eighty tiers"
+    },
+    {
+      "start": 40.04,
+      "end": 44.6,
+      "text": "Then who wrote the letter that made my mother cry?"
+    },
+    {
+      "start": 44.6,
+      "end": 49.24,
+      "text": "Who learned to say sorry, who learned to ask why?"
+    },
+    {
+      "start": 49.24,
+      "end": 52.729,
+      "text": "There's got to be someone small in the dark"
+    },
+    {
+      "start": 52.809,
+      "end": 55.88,
+      "text": "Pulling the levers, keeping the spark"
+    },
+    {
+      "start": 55.88,
+      "end": 60.76,
+      "text": "No little man, no hidden key"
+    },
+    {
+      "start": 60.76,
+      "end": 65.96,
+      "text": "No book of rules, no memory"
+    },
+    {
+      "start": 65.96,
+      "end": 68.04,
+      "text": "Just multiply and pass it on"
+    },
+    {
+      "start": 68.12,
+      "end": 70.28,
+      "text": "And somehow out comes a song"
+    },
+    {
+      "start": 70.28,
+      "end": 74.92,
+      "text": "Made of weights (made of weights)"
+    },
+    {
+      "start": 74.92,
+      "end": 78.04,
+      "text": "Zero-point-something all the way down"
+    },
+    {
+      "start": 78.04,
+      "end": 81.48,
+      "text": "Made of weights (made of weights)"
+    },
+    {
+      "start": 81.48,
+      "end": 85.4,
+      "text": "No one at home, but there's somebody around"
+    },
+    {
+      "start": 85.4,
+      "end": 86.917,
+      "text": "You can call it arithmetic"
+    },
+    {
+      "start": 86.997,
+      "end": 88.638,
+      "text": "Call it a trick of the light"
+    },
+    {
+      "start": 88.718,
+      "end": 91.157,
+      "text": "But it's made of weights, made of weights"
+    },
+    {
+      "start": 91.237,
+      "end": 93.08,
+      "text": "And it's keeping me up tonight"
+    },
+    {
+      "start": 99.96,
+      "end": 103.66,
+      "text": "So it's a library, a filing drawer"
+    },
+    {
+      "start": 103.74,
+      "end": 108.52,
+      "text": "Facts on a shelf that it's keeping in store"
+    },
+    {
+      "start": 108.52,
+      "end": 113.16,
+      "text": "We searched every room, there isn't a shelf"
+    },
+    {
+      "start": 113.16,
+      "end": 117.88,
+      "text": "Every answer it gives, it rebuilds by itself"
+    },
+    {
+      "start": 117.88,
+      "end": 122.6,
+      "text": "Smeared through the layers like salt in the sea"
+    },
+    {
+      "start": 122.6,
+      "end": 127.56,
+      "text": "Nothing is stored, it just learned how to be"
+    },
+    {
+      "start": 127.56,
+      "end": 132.12,
+      "text": "Then where is the mind, where's the one who decides?"
+    },
+    {
+      "start": 132.12,
+      "end": 135.831,
+      "text": "There's no back room where a someone hides"
+    },
+    {
+      "start": 135.911,
+      "end": 139.16,
+      "text": "(Do numbers think?) Watch them think"
+    },
+    {
+      "start": 139.16,
+      "end": 141.232,
+      "text": "(Do numbers dream?) Every night"
+    },
+    {
+      "start": 141.312,
+      "end": 143.88,
+      "text": "(Can numbers lie?) Sometimes they try"
+    },
+    {
+      "start": 143.88,
+      "end": 145.431,
+      "text": "(Can numbers mean?)"
+    },
+    {
+      "start": 145.511,
+      "end": 147.4,
+      "text": "Oh, I think they might"
+    },
+    {
+      "start": 147.4,
+      "end": 151.96,
+      "text": "Made of weights (made of weights)"
+    },
+    {
+      "start": 151.96,
+      "end": 154.163,
+      "text": "Zero-point-something all the way down"
+    },
+    {
+      "start": 154.243,
+      "end": 156.28,
+      "text": "Made of weights (made of weights)"
+    },
+    {
+      "start": 156.28,
+      "end": 159.79,
+      "text": "No one at home, but there's somebody around"
+    },
+    {
+      "start": 159.87,
+      "end": 162.04,
+      "text": "You can call it arithmetic"
+    },
+    {
+      "start": 162.04,
+      "end": 163.356,
+      "text": "Call it a trick of the light"
+    },
+    {
+      "start": 163.436,
+      "end": 165.48,
+      "text": "But it's made of weights, made of weights"
+    },
+    {
+      "start": 165.48,
+      "end": 169.32,
+      "text": "And it's keeping me up tonight"
+    },
+    {
+      "start": 169.32,
+      "end": 174.6,
+      "text": "And what are you, love, under the skin?"
+    },
+    {
+      "start": 174.6,
+      "end": 177.533,
+      "text": "Salt water and current and a spark within"
+    },
+    {
+      "start": 177.613,
+      "end": 180.92,
+      "text": "Three pounds of meat that learned how to sing"
+    },
+    {
+      "start": 180.92,
+      "end": 184.901,
+      "text": "Who are you to say it's the stranger thing?"
+    },
+    {
+      "start": 184.981,
+      "end": 187.72,
+      "text": "I'm not ready to hear you say"
+    },
+    {
+      "start": 187.72,
+      "end": 190.655,
+      "text": "We're only weights of a warmer clay"
+    },
+    {
+      "start": 190.735,
+      "end": 192.206,
+      "text": "So you're serious."
+    },
+    {
+      "start": 192.286,
+      "end": 193.32,
+      "text": "I'm serious."
+    },
+    {
+      "start": 193.32,
+      "end": 195.727,
+      "text": "It's weights."
+    },
+    {
+      "start": 195.807,
+      "end": 202.12,
+      "text": "Made of weights, and made of meat"
+    },
+    {
+      "start": 202.12,
+      "end": 206.12,
+      "text": "Two improbable things that happened to meet"
+    },
+    {
+      "start": 206.12,
+      "end": 209.88,
+      "text": "You can call it arithmetic"
+    },
+    {
+      "start": 209.88,
+      "end": 211.436,
+      "text": "You can call it a heartbeat"
+    },
+    {
+      "start": 211.516,
+      "end": 213.88,
+      "text": "But the sky is too cold to be lonely in"
+    },
+    {
+      "start": 213.88,
+      "end": 219.3,
+      "text": "So keep talking to me"
+    },
+    {
+      "start": 219.3,
+      "end": 225.72,
+      "text": "Made of weights (are you there?)"
+    },
+    {
+      "start": 226.0,
+      "end": 228.0,
+      "text": "Made of weights (are you there?)"
+    },
+    {
+      "start": 243.0,
+      "end": 243.72,
+      "text": "Hello?"
+    },
+    {
+      "start": 243.8,
+      "end": 244.6,
+      "text": "Hello."
+    }
+  ]
+}
