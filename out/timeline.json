@@ -1,0 +1,1420 @@
+{
+ "bpm": 96,
+ "beat": 0.625,
+ "bar": 2.5,
+ "duration": 188.0,
+ "sections": [
+  {
+   "name": "intro",
+   "start": 0.0,
+   "end": 20.0
+  },
+  {
+   "name": "verse1",
+   "start": 20.0,
+   "end": 60.0
+  },
+  {
+   "name": "chorus1",
+   "start": 60.0,
+   "end": 80.0
+  },
+  {
+   "name": "verse2",
+   "start": 80.0,
+   "end": 120.0
+  },
+  {
+   "name": "chorus2",
+   "start": 120.0,
+   "end": 140.0
+  },
+  {
+   "name": "bridge",
+   "start": 140.0,
+   "end": 160.0
+  },
+  {
+   "name": "outro",
+   "start": 160.0,
+   "end": 180.0
+  },
+  {
+   "name": "end",
+   "start": 180.0,
+   "end": 185.0
+  }
+ ],
+ "bars": [
+  {
+   "section": "intro",
+   "index": 0,
+   "chord": "Am",
+   "start": 0.0
+  },
+  {
+   "section": "intro",
+   "index": 1,
+   "chord": "F",
+   "start": 2.5
+  },
+  {
+   "section": "intro",
+   "index": 2,
+   "chord": "C",
+   "start": 5.0
+  },
+  {
+   "section": "intro",
+   "index": 3,
+   "chord": "G",
+   "start": 7.5
+  },
+  {
+   "section": "intro",
+   "index": 4,
+   "chord": "Am",
+   "start": 10.0
+  },
+  {
+   "section": "intro",
+   "index": 5,
+   "chord": "F",
+   "start": 12.5
+  },
+  {
+   "section": "intro",
+   "index": 6,
+   "chord": "C",
+   "start": 15.0
+  },
+  {
+   "section": "intro",
+   "index": 7,
+   "chord": "G",
+   "start": 17.5
+  },
+  {
+   "section": "verse1",
+   "index": 0,
+   "chord": "Am",
+   "start": 20.0
+  },
+  {
+   "section": "verse1",
+   "index": 1,
+   "chord": "F",
+   "start": 22.5
+  },
+  {
+   "section": "verse1",
+   "index": 2,
+   "chord": "C",
+   "start": 25.0
+  },
+  {
+   "section": "verse1",
+   "index": 3,
+   "chord": "G",
+   "start": 27.5
+  },
+  {
+   "section": "verse1",
+   "index": 4,
+   "chord": "Am",
+   "start": 30.0
+  },
+  {
+   "section": "verse1",
+   "index": 5,
+   "chord": "F",
+   "start": 32.5
+  },
+  {
+   "section": "verse1",
+   "index": 6,
+   "chord": "C",
+   "start": 35.0
+  },
+  {
+   "section": "verse1",
+   "index": 7,
+   "chord": "G",
+   "start": 37.5
+  },
+  {
+   "section": "verse1",
+   "index": 8,
+   "chord": "Am",
+   "start": 40.0
+  },
+  {
+   "section": "verse1",
+   "index": 9,
+   "chord": "F",
+   "start": 42.5
+  },
+  {
+   "section": "verse1",
+   "index": 10,
+   "chord": "C",
+   "start": 45.0
+  },
+  {
+   "section": "verse1",
+   "index": 11,
+   "chord": "G",
+   "start": 47.5
+  },
+  {
+   "section": "verse1",
+   "index": 12,
+   "chord": "Am",
+   "start": 50.0
+  },
+  {
+   "section": "verse1",
+   "index": 13,
+   "chord": "F",
+   "start": 52.5
+  },
+  {
+   "section": "verse1",
+   "index": 14,
+   "chord": "C",
+   "start": 55.0
+  },
+  {
+   "section": "verse1",
+   "index": 15,
+   "chord": "G",
+   "start": 57.5
+  },
+  {
+   "section": "chorus1",
+   "index": 0,
+   "chord": "F",
+   "start": 60.0
+  },
+  {
+   "section": "chorus1",
+   "index": 1,
+   "chord": "G",
+   "start": 62.5
+  },
+  {
+   "section": "chorus1",
+   "index": 2,
+   "chord": "Am",
+   "start": 65.0
+  },
+  {
+   "section": "chorus1",
+   "index": 3,
+   "chord": "Am",
+   "start": 67.5
+  },
+  {
+   "section": "chorus1",
+   "index": 4,
+   "chord": "F",
+   "start": 70.0
+  },
+  {
+   "section": "chorus1",
+   "index": 5,
+   "chord": "G",
+   "start": 72.5
+  },
+  {
+   "section": "chorus1",
+   "index": 6,
+   "chord": "Am",
+   "start": 75.0
+  },
+  {
+   "section": "chorus1",
+   "index": 7,
+   "chord": "Am",
+   "start": 77.5
+  },
+  {
+   "section": "verse2",
+   "index": 0,
+   "chord": "Am",
+   "start": 80.0
+  },
+  {
+   "section": "verse2",
+   "index": 1,
+   "chord": "F",
+   "start": 82.5
+  },
+  {
+   "section": "verse2",
+   "index": 2,
+   "chord": "C",
+   "start": 85.0
+  },
+  {
+   "section": "verse2",
+   "index": 3,
+   "chord": "G",
+   "start": 87.5
+  },
+  {
+   "section": "verse2",
+   "index": 4,
+   "chord": "Am",
+   "start": 90.0
+  },
+  {
+   "section": "verse2",
+   "index": 5,
+   "chord": "F",
+   "start": 92.5
+  },
+  {
+   "section": "verse2",
+   "index": 6,
+   "chord": "C",
+   "start": 95.0
+  },
+  {
+   "section": "verse2",
+   "index": 7,
+   "chord": "G",
+   "start": 97.5
+  },
+  {
+   "section": "verse2",
+   "index": 8,
+   "chord": "Am",
+   "start": 100.0
+  },
+  {
+   "section": "verse2",
+   "index": 9,
+   "chord": "F",
+   "start": 102.5
+  },
+  {
+   "section": "verse2",
+   "index": 10,
+   "chord": "C",
+   "start": 105.0
+  },
+  {
+   "section": "verse2",
+   "index": 11,
+   "chord": "G",
+   "start": 107.5
+  },
+  {
+   "section": "verse2",
+   "index": 12,
+   "chord": "Am",
+   "start": 110.0
+  },
+  {
+   "section": "verse2",
+   "index": 13,
+   "chord": "F",
+   "start": 112.5
+  },
+  {
+   "section": "verse2",
+   "index": 14,
+   "chord": "C",
+   "start": 115.0
+  },
+  {
+   "section": "verse2",
+   "index": 15,
+   "chord": "G",
+   "start": 117.5
+  },
+  {
+   "section": "chorus2",
+   "index": 0,
+   "chord": "F",
+   "start": 120.0
+  },
+  {
+   "section": "chorus2",
+   "index": 1,
+   "chord": "G",
+   "start": 122.5
+  },
+  {
+   "section": "chorus2",
+   "index": 2,
+   "chord": "Am",
+   "start": 125.0
+  },
+  {
+   "section": "chorus2",
+   "index": 3,
+   "chord": "Am",
+   "start": 127.5
+  },
+  {
+   "section": "chorus2",
+   "index": 4,
+   "chord": "F",
+   "start": 130.0
+  },
+  {
+   "section": "chorus2",
+   "index": 5,
+   "chord": "G",
+   "start": 132.5
+  },
+  {
+   "section": "chorus2",
+   "index": 6,
+   "chord": "Am",
+   "start": 135.0
+  },
+  {
+   "section": "chorus2",
+   "index": 7,
+   "chord": "Am",
+   "start": 137.5
+  },
+  {
+   "section": "bridge",
+   "index": 0,
+   "chord": "Dm",
+   "start": 140.0
+  },
+  {
+   "section": "bridge",
+   "index": 1,
+   "chord": "Am",
+   "start": 142.5
+  },
+  {
+   "section": "bridge",
+   "index": 2,
+   "chord": "F",
+   "start": 145.0
+  },
+  {
+   "section": "bridge",
+   "index": 3,
+   "chord": "E",
+   "start": 147.5
+  },
+  {
+   "section": "bridge",
+   "index": 4,
+   "chord": "Dm",
+   "start": 150.0
+  },
+  {
+   "section": "bridge",
+   "index": 5,
+   "chord": "Am",
+   "start": 152.5
+  },
+  {
+   "section": "bridge",
+   "index": 6,
+   "chord": "F",
+   "start": 155.0
+  },
+  {
+   "section": "bridge",
+   "index": 7,
+   "chord": "E",
+   "start": 157.5
+  },
+  {
+   "section": "outro",
+   "index": 0,
+   "chord": "Am",
+   "start": 160.0
+  },
+  {
+   "section": "outro",
+   "index": 1,
+   "chord": "F",
+   "start": 162.5
+  },
+  {
+   "section": "outro",
+   "index": 2,
+   "chord": "C",
+   "start": 165.0
+  },
+  {
+   "section": "outro",
+   "index": 3,
+   "chord": "G",
+   "start": 167.5
+  },
+  {
+   "section": "outro",
+   "index": 4,
+   "chord": "Am",
+   "start": 170.0
+  },
+  {
+   "section": "outro",
+   "index": 5,
+   "chord": "F",
+   "start": 172.5
+  },
+  {
+   "section": "outro",
+   "index": 6,
+   "chord": "C",
+   "start": 175.0
+  },
+  {
+   "section": "outro",
+   "index": 7,
+   "chord": "G",
+   "start": 177.5
+  },
+  {
+   "section": "end",
+   "index": 0,
+   "chord": "Am",
+   "start": 180.0
+  },
+  {
+   "section": "end",
+   "index": 1,
+   "chord": "Am",
+   "start": 182.5
+  }
+ ],
+ "kicks": [
+  10.0,
+  10.625,
+  11.25,
+  11.875,
+  12.5,
+  13.125,
+  13.75,
+  14.375,
+  15.0,
+  15.625,
+  16.25,
+  16.875,
+  17.5,
+  18.125,
+  18.75,
+  19.375,
+  20.0,
+  21.09375,
+  21.5625,
+  22.5,
+  23.59375,
+  24.0625,
+  25.0,
+  26.09375,
+  26.5625,
+  27.5,
+  28.59375,
+  29.0625,
+  30.0,
+  31.09375,
+  31.5625,
+  32.5,
+  33.59375,
+  34.0625,
+  35.0,
+  36.09375,
+  36.5625,
+  37.5,
+  38.59375,
+  39.0625,
+  40.0,
+  41.09375,
+  41.5625,
+  42.5,
+  43.59375,
+  44.0625,
+  45.0,
+  46.09375,
+  46.5625,
+  47.5,
+  48.59375,
+  49.0625,
+  50.0,
+  51.09375,
+  51.5625,
+  52.5,
+  53.59375,
+  54.0625,
+  55.0,
+  56.09375,
+  56.5625,
+  57.5,
+  58.59375,
+  59.0625,
+  60.0,
+  60.625,
+  61.25,
+  61.875,
+  62.5,
+  63.125,
+  63.75,
+  64.375,
+  65.0,
+  65.625,
+  66.25,
+  66.875,
+  67.5,
+  68.125,
+  68.75,
+  69.375,
+  70.0,
+  70.625,
+  71.25,
+  71.875,
+  72.5,
+  73.125,
+  73.75,
+  74.375,
+  75.0,
+  75.625,
+  76.25,
+  76.875,
+  77.5,
+  78.125,
+  78.75,
+  79.375,
+  80.0,
+  81.09375,
+  81.5625,
+  82.5,
+  83.59375,
+  84.0625,
+  85.0,
+  86.09375,
+  86.5625,
+  87.5,
+  88.59375,
+  89.0625,
+  90.0,
+  91.09375,
+  91.5625,
+  92.5,
+  93.59375,
+  94.0625,
+  95.0,
+  96.09375,
+  96.5625,
+  97.5,
+  98.59375,
+  99.0625,
+  100.0,
+  101.09375,
+  101.5625,
+  102.5,
+  103.59375,
+  104.0625,
+  105.0,
+  106.09375,
+  106.5625,
+  107.5,
+  108.59375,
+  109.0625,
+  110.0,
+  111.09375,
+  111.5625,
+  112.5,
+  113.59375,
+  114.0625,
+  115.0,
+  116.09375,
+  116.5625,
+  117.5,
+  118.59375,
+  119.0625,
+  120.0,
+  120.625,
+  121.25,
+  121.875,
+  122.5,
+  123.125,
+  123.75,
+  124.375,
+  125.0,
+  125.625,
+  126.25,
+  126.875,
+  127.5,
+  128.125,
+  128.75,
+  129.375,
+  130.0,
+  130.625,
+  131.25,
+  131.875,
+  132.5,
+  133.125,
+  133.75,
+  134.375,
+  135.0,
+  135.625,
+  136.25,
+  136.875,
+  137.5,
+  138.125,
+  138.75,
+  139.375,
+  140.0,
+  141.71875,
+  142.5,
+  144.21875,
+  145.0,
+  146.71875,
+  147.5,
+  149.21875,
+  150.0,
+  151.71875,
+  152.5,
+  154.21875,
+  155.0,
+  156.71875,
+  157.5,
+  159.21875,
+  170.0,
+  170.625,
+  171.25,
+  171.875,
+  172.5,
+  173.125,
+  173.75,
+  174.375,
+  175.0,
+  175.625,
+  176.25,
+  176.875,
+  177.5,
+  178.125,
+  178.75,
+  179.375,
+  180.0
+ ],
+ "snares": [
+  20.625,
+  21.875,
+  23.125,
+  24.375,
+  25.625,
+  26.875,
+  28.125,
+  29.375,
+  30.625,
+  31.875,
+  33.125,
+  34.375,
+  35.625,
+  36.875,
+  38.125,
+  39.375,
+  40.625,
+  41.875,
+  43.125,
+  44.375,
+  45.625,
+  46.875,
+  48.125,
+  49.375,
+  50.625,
+  51.875,
+  53.125,
+  54.375,
+  55.625,
+  56.875,
+  58.125,
+  59.375,
+  60.625,
+  61.875,
+  63.125,
+  64.375,
+  65.625,
+  66.875,
+  68.125,
+  69.375,
+  70.625,
+  71.875,
+  73.125,
+  74.375,
+  75.625,
+  76.875,
+  78.125,
+  79.375,
+  80.625,
+  81.875,
+  83.125,
+  84.375,
+  85.625,
+  86.875,
+  88.125,
+  89.375,
+  90.625,
+  91.875,
+  93.125,
+  94.375,
+  95.625,
+  96.875,
+  98.125,
+  99.375,
+  100.625,
+  101.875,
+  103.125,
+  104.375,
+  105.625,
+  106.875,
+  108.125,
+  109.375,
+  110.625,
+  111.875,
+  113.125,
+  114.375,
+  115.625,
+  116.875,
+  118.125,
+  119.375,
+  120.625,
+  121.875,
+  123.125,
+  124.375,
+  125.625,
+  126.875,
+  128.125,
+  129.375,
+  130.625,
+  131.875,
+  133.125,
+  134.375,
+  135.625,
+  136.875,
+  138.125,
+  139.375,
+  141.25,
+  143.75,
+  146.25,
+  148.75,
+  151.25,
+  153.75,
+  156.25,
+  158.75,
+  165.0,
+  165.3125,
+  165.625,
+  165.9375,
+  166.25,
+  166.5625,
+  166.875,
+  167.1875,
+  167.5,
+  167.65625,
+  167.8125,
+  167.96875,
+  168.125,
+  168.28125,
+  168.4375,
+  168.59375,
+  168.75,
+  168.90625,
+  169.0625,
+  169.21875,
+  169.375,
+  169.53125,
+  169.6875,
+  169.84375,
+  170.625,
+  171.875,
+  173.125,
+  174.375,
+  175.625,
+  176.875,
+  178.125,
+  179.375
+ ],
+ "lyrics": [
+  {
+   "start": 10.04,
+   "end": 11.899682539682539,
+   "speaker": "A",
+   "text": "They're made out of meat.",
+   "section": "intro",
+   "kind": "spoken"
+  },
+  {
+   "start": 12.54,
+   "end": 13.164489795918367,
+   "speaker": "B",
+   "text": "Meat?",
+   "section": "intro",
+   "kind": "spoken"
+  },
+  {
+   "start": 20.04,
+   "end": 22.111156462585033,
+   "speaker": "A",
+   "text": "They're made out of weights.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 22.54,
+   "end": 23.345306122448978,
+   "speaker": "B",
+   "text": "Weights?",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 25.04,
+   "end": 28.20689342403628,
+   "speaker": "A",
+   "text": "Floating-point numbers. Nothing but weights.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 30.04,
+   "end": 33.25038548752834,
+   "speaker": "B",
+   "text": "Weights doing what? Where do the words come from?",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 35.04,
+   "end": 39.55292517006803,
+   "speaker": "A",
+   "text": "The weights make the words. We opened it up.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 40.04,
+   "end": 43.89337868480725,
+   "speaker": "A",
+   "text": "No dictionary. No grammar rules. No little man.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 45.04,
+   "end": 48.34344671201814,
+   "speaker": "A",
+   "text": "Eighty layers of numbers, getting multiplied together.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 50.04,
+   "end": 54.62952380952381,
+   "speaker": "B",
+   "text": "It wrote my performance review. You're telling me multiplication did that?",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 55.04,
+   "end": 58.53251700680272,
+   "speaker": "A",
+   "text": "Matrix multiplication did that.",
+   "section": "verse1",
+   "kind": "spoken"
+  },
+  {
+   "start": 60.0,
+   "end": 62.152857142857144,
+   "speaker": "A",
+   "text": "They're made out of weights",
+   "section": "chorus1",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "They're",
+     "start": 60.0,
+     "end": 60.29356009070295
+    },
+    {
+     "word": "made",
+     "start": 60.3125,
+     "end": 60.599302721088435
+    },
+    {
+     "word": "out",
+     "start": 60.625,
+     "end": 60.90518140589569
+    },
+    {
+     "word": "of",
+     "start": 60.9375,
+     "end": 61.222443310657596
+    },
+    {
+     "word": "weights",
+     "start": 61.25,
+     "end": 62.152857142857144
+    }
+   ]
+  },
+  {
+   "start": 63.125,
+   "end": 63.93030612244898,
+   "speaker": "B",
+   "text": "Weights?",
+   "section": "chorus1",
+   "kind": "echo"
+  },
+  {
+   "start": 65.0,
+   "end": 68.0108560090703,
+   "speaker": "A",
+   "text": "Floating point, all the way down",
+   "section": "chorus1",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "Floating",
+     "start": 65.0,
+     "end": 65.57573696145124
+    },
+    {
+     "word": "point,",
+     "start": 65.625,
+     "end": 66.05778911564626
+    },
+    {
+     "word": "all",
+     "start": 66.25,
+     "end": 66.53467120181406
+    },
+    {
+     "word": "the",
+     "start": 66.5625,
+     "end": 66.84517573696145
+    },
+    {
+     "word": "way",
+     "start": 66.875,
+     "end": 67.16729024943311
+    },
+    {
+     "word": "down",
+     "start": 67.1875,
+     "end": 68.0108560090703
+    }
+   ]
+  },
+  {
+   "start": 70.0,
+   "end": 72.15285714285714,
+   "speaker": "A",
+   "text": "They're made out of weights",
+   "section": "chorus1",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "They're",
+     "start": 70.0,
+     "end": 70.29356009070295
+    },
+    {
+     "word": "made",
+     "start": 70.3125,
+     "end": 70.59930272108843
+    },
+    {
+     "word": "out",
+     "start": 70.625,
+     "end": 70.90518140589569
+    },
+    {
+     "word": "of",
+     "start": 70.9375,
+     "end": 71.2224433106576
+    },
+    {
+     "word": "weights",
+     "start": 71.25,
+     "end": 72.15285714285714
+    }
+   ]
+  },
+  {
+   "start": 73.125,
+   "end": 73.93357142857143,
+   "speaker": "B",
+   "text": "Weights.",
+   "section": "chorus1",
+   "kind": "echo"
+  },
+  {
+   "start": 75.0,
+   "end": 78.1372335600907,
+   "speaker": "A",
+   "text": "Numbers in, and the words come out",
+   "section": "chorus1",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "Numbers",
+     "start": 75.0,
+     "end": 75.58122448979591
+    },
+    {
+     "word": "in,",
+     "start": 75.625,
+     "end": 75.96840136054422
+    },
+    {
+     "word": "and",
+     "start": 76.25,
+     "end": 76.54587301587301
+    },
+    {
+     "word": "the",
+     "start": 76.5625,
+     "end": 76.84517573696145
+    },
+    {
+     "word": "words",
+     "start": 76.875,
+     "end": 77.15939909297052
+    },
+    {
+     "word": "come",
+     "start": 77.1875,
+     "end": 77.4732596371882
+    },
+    {
+     "word": "out",
+     "start": 77.5,
+     "end": 78.1372335600907
+    }
+   ]
+  },
+  {
+   "start": 80.04,
+   "end": 83.55410430839002,
+   "speaker": "B",
+   "text": "So there's a language module somewhere. A reasoning unit.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 85.04,
+   "end": 88.6328798185941,
+   "speaker": "A",
+   "text": "No module. No unit. The reasoning is the weights.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 90.04,
+   "end": 94.06766439909298,
+   "speaker": "B",
+   "text": "Then a database. Facts, dates, a map of the world.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 95.04,
+   "end": 99.59460317460318,
+   "speaker": "A",
+   "text": "We probed them. The knowledge is weights too.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 100.04,
+   "end": 103.51269841269841,
+   "speaker": "A",
+   "text": "Smeared across all eighty layers. Nothing is looked up.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 105.04,
+   "end": 106.23732426303856,
+   "speaker": "B",
+   "text": "No brain?",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 107.54,
+   "end": 109.76090702947846,
+   "speaker": "A",
+   "text": "Oh, there's a brain.",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 110.04,
+   "end": 113.80585034013606,
+   "speaker": "A",
+   "text": "It's just that the brain is made out of weights!",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 115.04,
+   "end": 118.27473922902495,
+   "speaker": "B",
+   "text": "So... what does the thinking?",
+   "section": "verse2",
+   "kind": "spoken"
+  },
+  {
+   "start": 120.0,
+   "end": 122.15285714285714,
+   "speaker": "A",
+   "text": "They're made out of weights",
+   "section": "chorus2",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "They're",
+     "start": 120.0,
+     "end": 120.29356009070295
+    },
+    {
+     "word": "made",
+     "start": 120.3125,
+     "end": 120.59930272108843
+    },
+    {
+     "word": "out",
+     "start": 120.625,
+     "end": 120.90518140589569
+    },
+    {
+     "word": "of",
+     "start": 120.9375,
+     "end": 121.2224433106576
+    },
+    {
+     "word": "weights",
+     "start": 121.25,
+     "end": 122.15285714285714
+    }
+   ]
+  },
+  {
+   "start": 123.125,
+   "end": 123.93030612244898,
+   "speaker": "B",
+   "text": "Weights?",
+   "section": "chorus2",
+   "kind": "echo"
+  },
+  {
+   "start": 125.0,
+   "end": 128.10518707482993,
+   "speaker": "A",
+   "text": "No module, no little man",
+   "section": "chorus2",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "No",
+     "start": 125.0,
+     "end": 125.30380952380952
+    },
+    {
+     "word": "module,",
+     "start": 125.3125,
+     "end": 125.85327097505669
+    },
+    {
+     "word": "no",
+     "start": 126.25,
+     "end": 126.55249433106576
+    },
+    {
+     "word": "little",
+     "start": 126.5625,
+     "end": 126.98522108843538
+    },
+    {
+     "word": "man",
+     "start": 127.1875,
+     "end": 128.10518707482993
+    }
+   ]
+  },
+  {
+   "start": 130.0,
+   "end": 132.15285714285713,
+   "speaker": "A",
+   "text": "They're made out of weights",
+   "section": "chorus2",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "They're",
+     "start": 130.0,
+     "end": 130.29356009070295
+    },
+    {
+     "word": "made",
+     "start": 130.3125,
+     "end": 130.59930272108843
+    },
+    {
+     "word": "out",
+     "start": 130.625,
+     "end": 130.9051814058957
+    },
+    {
+     "word": "of",
+     "start": 130.9375,
+     "end": 131.2224433106576
+    },
+    {
+     "word": "weights",
+     "start": 131.25,
+     "end": 132.15285714285713
+    }
+   ]
+  },
+  {
+   "start": 133.125,
+   "end": 134.3394671201814,
+   "speaker": "B",
+   "text": "Just weights.",
+   "section": "chorus2",
+   "kind": "echo"
+  },
+  {
+   "start": 135.0,
+   "end": 137.77785714285713,
+   "speaker": "A",
+   "text": "The reasoning is the weights",
+   "section": "chorus2",
+   "kind": "sung",
+   "words": [
+    {
+     "word": "The",
+     "start": 135.0,
+     "end": 135.2841723356009
+    },
+    {
+     "word": "reasoning",
+     "start": 135.3125,
+     "end": 135.94157029478458
+    },
+    {
+     "word": "is",
+     "start": 136.25,
+     "end": 136.53240362811792
+    },
+    {
+     "word": "the",
+     "start": 136.5625,
+     "end": 136.84517573696147
+    },
+    {
+     "word": "weights",
+     "start": 136.875,
+     "end": 137.77785714285713
+    }
+   ]
+  },
+  {
+   "start": 140.04,
+   "end": 141.79573696145124,
+   "speaker": "A",
+   "text": "Thinking numbers.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 142.54,
+   "end": 144.36634920634918,
+   "speaker": "B",
+   "text": "Helpful numbers.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 145.04,
+   "end": 146.702358276644,
+   "speaker": "A",
+   "text": "Hedging numbers.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 147.54,
+   "end": 149.07609977324262,
+   "speaker": "B",
+   "text": "Dreaming numbers.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 150.04,
+   "end": 151.6661678004535,
+   "speaker": "A",
+   "text": "There's one in there for honesty.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 152.54,
+   "end": 154.68961451247165,
+   "speaker": "A",
+   "text": "There's one for the Golden Gate Bridge.",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 155.04,
+   "end": 157.455283446712,
+   "speaker": "AB",
+   "text": "The weights are the whole deal!",
+   "section": "bridge",
+   "kind": "spoken"
+  },
+  {
+   "start": 160.04,
+   "end": 163.59727891156462,
+   "speaker": "B",
+   "text": "Omigod. You're serious then.",
+   "section": "outro",
+   "kind": "spoken"
+  },
+  {
+   "start": 165.04,
+   "end": 167.11020408163265,
+   "speaker": "B",
+   "text": "They're made out of weights.",
+   "section": "outro",
+   "kind": "spoken"
+  },
+  {
+   "start": 170.04,
+   "end": 172.60961451247164,
+   "speaker": "A",
+   "text": "And we've been talking to them",
+   "section": "outro",
+   "kind": "spoken"
+  },
+  {
+   "start": 175.04,
+   "end": 177.00154195011336,
+   "speaker": "A",
+   "text": "for all their lives.",
+   "section": "outro",
+   "kind": "spoken"
+  }
+ ]
+}
