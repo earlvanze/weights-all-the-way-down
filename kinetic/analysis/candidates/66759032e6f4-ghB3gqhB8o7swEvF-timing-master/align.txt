@@ -1,0 +1,18 @@
+chunk intro 'We opened it up': window 0.00-7.00 drift +0.00
+chunk verse1 'I took it apart on a Tuesday': window 10.10-44.10 drift +1.10
+chunk verse1 "There's got to be someone sm": window 39.69-49.83 drift +0.82
+chunk pre1 'No little man, no hidden key': window 47.69-61.89 drift -0.11
+chunk chorus1 'Made of weights': window 59.04-71.35 drift +0.35
+chunk chorus1 'You can call it arithmetic': window 68.14-82.96 drift +1.96
+chunk verse2 "So it's a library, a filing ": window 78.34-99.34 drift +0.34
+chunk verse2 'Then where is the mind, wher': window 95.83-104.18 drift +0.18
+chunk pre2 'Do numbers think?': window 100.77-111.15 drift +0.15
+chunk pre2 'Can numbers mean?': window 108.07-114.37 drift +0.37
+chunk chorus2 'Made of weights': window 110.29-124.33 drift +0.33
+chunk chorus2 'You can call it arithmetic': window 121.48-134.67 drift +0.67
+chunk bridge1 'And what are you, love, unde': window 131.60-156.68 drift +0.68
+chunk breakdown1 "So you're serious": window 152.69-165.56 drift +0.56
+chunk breakdown1 "It's weights": window 166.17-177.17 drift +1.17
+chunk final1 'Made of weights, and made of': window 179.10-204.10 drift +1.10
+chunk outro1 'Made of weights': window 198.56-213.62 drift +0.62
+72 lines; 396 words; low-confidence (<0.05): 50

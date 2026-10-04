@@ -84,6 +84,29 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # numpy, Pi
 - **Render time:** about 8 minutes on 4 cores. With the grain, the output is large (~180 MB at
   CRF 23). Raise `-crf` in `render_segment()` for a smaller file.
 
+## Weights All the Way Down — kinetic noir (1080p, `kinetic/`)
+
+A rebuild of the noir video on the [kinetic-typography template](../kinetic-template): 1920×1080, every sung word timed
+and landing on its onset, ~50 shots instead of 9 scenes.
+
+- **Timing:** word-level, from the vocal stem (`kinetic/data/lyrics.json`). Evidence and pins are in
+  [`kinetic/TIMING.md`](kinetic/TIMING.md). The old renderer only placed cards per scene.
+- **Neon:** real tubes, not glowing type. Each stroke of a single-stroke font is a bent glass tube. Unlit it's pale glass
+  with a specular line; lit it has a saturated body, a white-hot core and a halo. It also has blacked-out jumps between
+  letters, electrode caps, standoff clips, a raceway box, an ignition stutter, faulty-transformer drop-outs and
+  wet-street reflections (`kinetic/app/src/project/noir.ts`).
+- **Point clouds:** the city, the 80-tier layer stack, the drop through planes of weights, the brain on the butcher's
+  scale, the bust that warms to clay, the jazz trio, the two spheres that meet, ANSWER→ITSELF, and SALT dissolving.
+- **Edit:** `kinetic/app/src/project/script.ts`. Shots are in `shots-a.ts` (intro, verse 1, pre 1), `shots-b.ts` (choruses,
+  verse 2, pre 2) and `shots-c.ts` (bridge → end).
+
+```sh
+cd kinetic
+(cd app && bun scripts/render.ts sheet --cuts --cols 5 --out ../out/wip/sheet.png)   # contact sheet
+./review.sh v2                                     # out/review/v2-half.mp4 (fast, 960x540)
+./render-full.sh weights-all-the-way-down-kinetic.mp4   # final: motion blur, QA
+```
+
 ## Structure (original procedural version)
 
 | time | section | |

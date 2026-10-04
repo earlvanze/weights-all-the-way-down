@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "share_url": "https://suno.com/s/ghB3gqhB8o7swEvF",
+  "title": "Weights All the Way Down by earlco | Suno",
+  "player_reported_duration_seconds": 223.6,
+  "capture_method": "Authorized normal Suno browser playback captured through a dedicated temporary PipeWire/Pulse null-sink monitor; not a direct media download.",
+  "capture_date": "2026-10-04",
+  "raw": {
+    "path": "ghB3gqhB8o7swEvF-raw.wav",
+    "duration_seconds": 227.05,
+    "sha256": "472868e946fa2533011b116d841b84a7bfee9864a6627c2df790a4e8460f390d"
+  },
+  "timing_master": {
+    "path": "ghB3gqhB8o7swEvF-timing-master.wav",
+    "duration_seconds": 223.6,
+    "sha256": "66759032e6f4c4134b0e680e77d06c7eabca09328acfe54be0141957813360b7",
+    "trim_start_seconds": 1.5573333333333332,
+    "trim_start_sample": 74752,
+    "trim_end_seconds": 225.15733333333333,
+    "trim_end_sample": 10807552,
+    "trim_duration_seconds": 223.6
+  },
+  "audio_format": {
+    "codec": "pcm_s24le",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "sample_format": "24-bit PCM"
+  },
+  "verification": {
+    "onset_selection": "Leading silence ended at raw sample 74,752 (1.557333333 s); timing master begins at that exact sample.",
+    "duration_selection": "Timing master contains exactly 10,732,800 frames (223.600000 s), matching the player-reported duration.",
+    "ending_selection": "Master has a normal final fade/silence from 222.911563 s to 223.534042 s. Audio occurring after raw 225.157333 s was excluded because it lies outside the selected player duration.",
+    "decode_check": "Both raw capture and timing master decoded cleanly with FFmpeg, including boundary excerpts.",
+    "silence_check": "No leading silence was detected in timing master. A 0 dBFS peak exists in the captured source; no alteration was applied to the preserved raw or timing master."
+  },
+  "whisper_outputs": {
+    "json": "ghB3gqhB8o7swEvF-whisper-medium-en.json",
+    "srt": "ghB3gqhB8o7swEvF-whisper-medium-en.srt",
+    "normalized_timings": "ghB3gqhB8o7swEvF-whisper-timings.json",
+    "log": "ghB3gqhB8o7swEvF-whisper-medium-en.log"
+  }
+}

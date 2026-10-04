@@ -13,3 +13,17 @@ out/mow_segments.txt
 out/noir_seg_*.mp4
 out/noir_segments.txt
 out/weights-all-the-way-down-noir*.mp4
+
+# kinetic (1080p kinetic-typography version)
+kinetic/app/node_modules/
+kinetic/analysis/.venv/
+kinetic/analysis/work/
+kinetic/analysis/candidates/*/*.wav
+kinetic/out/wip/
+kinetic/out/review/*.log
+kinetic/out/final/*.segs/
+kinetic/qa/
+kinetic/analysis/candidates/*/master.m4a
+kinetic/out/review/v1-half.mp4
+audio/*/*-raw.wav
+kinetic/out/*.log

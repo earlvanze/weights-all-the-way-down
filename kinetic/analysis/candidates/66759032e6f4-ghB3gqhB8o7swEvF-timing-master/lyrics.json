@@ -1,0 +1,3256 @@
+{
+ "lines": [
+  {
+   "text": "We opened it up",
+   "section": "intro",
+   "start": 1.103,
+   "end": 1.905,
+   "words": [
+    {
+     "w": "We",
+     "start": 1.103,
+     "end": 1.304,
+     "conf": 0.428
+    },
+    {
+     "w": "opened",
+     "start": 1.304,
+     "end": 1.605,
+     "conf": 0.438
+    },
+    {
+     "w": "it",
+     "start": 1.605,
+     "end": 1.765,
+     "conf": 0.496
+    },
+    {
+     "w": "up",
+     "start": 1.765,
+     "end": 1.905,
+     "conf": 0.498
+    }
+   ],
+   "cue": [
+    0.0,
+    2.0
+   ]
+  },
+  {
+   "text": "And?",
+   "section": "intro",
+   "start": 2.848,
+   "end": 3.169,
+   "words": [
+    {
+     "w": "And?",
+     "start": 2.848,
+     "end": 3.169,
+     "conf": 0.338
+    }
+   ],
+   "cue": [
+    2.0,
+    4.0
+   ]
+  },
+  {
+   "text": "I took it apart on a Tuesday night",
+   "section": "verse1",
+   "start": 13.825,
+   "end": 15.726,
+   "words": [
+    {
+     "w": "I",
+     "start": 13.825,
+     "end": 13.925,
+     "conf": 0.498
+    },
+    {
+     "w": "took",
+     "start": 13.925,
+     "end": 14.105,
+     "conf": 0.497
+    },
+    {
+     "w": "it",
+     "start": 14.105,
+     "end": 14.205,
+     "conf": 0.493
+    },
+    {
+     "w": "apart",
+     "start": 14.205,
+     "end": 14.726,
+     "conf": 0.498
+    },
+    {
+     "w": "on",
+     "start": 14.726,
+     "end": 14.846,
+     "conf": 0.493
+    },
+    {
+     "w": "a",
+     "start": 14.846,
+     "end": 14.966,
+     "conf": 0.436
+    },
+    {
+     "w": "Tuesday",
+     "start": 14.966,
+     "end": 15.426,
+     "conf": 0.224
+    },
+    {
+     "w": "night",
+     "start": 15.426,
+     "end": 15.726,
+     "conf": 0.442
+    }
+   ],
+   "cue": [
+    13.0,
+    16.0
+   ]
+  },
+  {
+   "text": "Layer by layer under fluorescent light",
+   "section": "verse1",
+   "start": 17.808,
+   "end": 19.989,
+   "words": [
+    {
+     "w": "Layer",
+     "start": 17.808,
+     "end": 18.128,
+     "conf": 0.381
+    },
+    {
+     "w": "by",
+     "start": 18.128,
+     "end": 18.388,
+     "conf": 0.477
+    },
+    {
+     "w": "layer",
+     "start": 18.388,
+     "end": 18.728,
+     "conf": 0.362
+    },
+    {
+     "w": "under",
+     "start": 18.728,
+     "end": 19.008,
+     "conf": 0.434
+    },
+    {
+     "w": "fluorescent",
+     "start": 19.008,
+     "end": 19.709,
+     "conf": 0.371
+    },
+    {
+     "w": "light",
+     "start": 19.709,
+     "end": 19.989,
+     "conf": 0.46
+    }
+   ],
+   "cue": [
+    17.0,
+    20.0
+   ]
+  },
+  {
+   "text": "Went looking for ghosts, went looking for gears",
+   "section": "verse1",
+   "start": 22.33,
+   "end": 24.752,
+   "words": [
+    {
+     "w": "Went",
+     "start": 22.33,
+     "end": 22.51,
+     "conf": 0.373
+    },
+    {
+     "w": "looking",
+     "start": 22.51,
+     "end": 22.79,
+     "conf": 0.486
+    },
+    {
+     "w": "for",
+     "start": 22.79,
+     "end": 23.011,
+     "conf": 0.488
+    },
+    {
+     "w": "ghosts,",
+     "start": 23.011,
+     "end": 23.551,
+     "conf": 0.403
+    },
+    {
+     "w": "went",
+     "start": 23.551,
+     "end": 23.731,
+     "conf": 0.308
+    },
+    {
+     "w": "looking",
+     "start": 23.731,
+     "end": 24.011,
+     "conf": 0.496
+    },
+    {
+     "w": "for",
+     "start": 24.011,
+     "end": 24.231,
+     "conf": 0.457
+    },
+    {
+     "w": "gears",
+     "start": 24.231,
+     "end": 24.752,
+     "conf": 0.424
+    }
+   ],
+   "cue": [
+    22.0,
+    25.0
+   ]
+  },
+  {
+   "text": "Found only numbers, stacked eighty tiers",
+   "section": "verse1",
+   "start": 26.333,
+   "end": 30.055,
+   "words": [
+    {
+     "w": "Found",
+     "start": 26.333,
+     "end": 26.713,
+     "conf": 0.492
+    },
+    {
+     "w": "only",
+     "start": 26.713,
+     "end": 26.993,
+     "conf": 0.427
+    },
+    {
+     "w": "numbers,",
+     "start": 26.993,
+     "end": 27.453,
+     "conf": 0.497
+    },
+    {
+     "w": "stacked",
+     "start": 28.374,
+     "end": 29.094,
+     "conf": 0.43
+    },
+    {
+     "w": "eighty",
+     "start": 29.094,
+     "end": 29.454,
+     "conf": 0.236
+    },
+    {
+     "w": "tiers",
+     "start": 29.454,
+     "end": 30.055,
+     "conf": 0.316
+    }
+   ],
+   "cue": [
+    26.0,
+    30.0
+   ]
+  },
+  {
+   "text": "Then who wrote the letter that made my mother cry?",
+   "section": "verse1",
+   "start": 31.155,
+   "end": 35.258,
+   "words": [
+    {
+     "w": "Then",
+     "start": 31.155,
+     "end": 31.476,
+     "conf": 0.472
+    },
+    {
+     "w": "who",
+     "start": 31.476,
+     "end": 31.996,
+     "conf": 0.491
+    },
+    {
+     "w": "wrote",
+     "start": 31.996,
+     "end": 32.336,
+     "conf": 0.372
+    },
+    {
+     "w": "the",
+     "start": 32.336,
+     "end": 32.516,
+     "conf": 0.452
+    },
+    {
+     "w": "letter",
+     "start": 32.516,
+     "end": 32.876,
+     "conf": 0.494
+    },
+    {
+     "w": "that",
+     "start": 33.497,
+     "end": 33.777,
+     "conf": 0.476
+    },
+    {
+     "w": "made",
+     "start": 33.777,
+     "end": 34.077,
+     "conf": 0.499
+    },
+    {
+     "w": "my",
+     "start": 34.077,
+     "end": 34.357,
+     "conf": 0.499
+    },
+    {
+     "w": "mother",
+     "start": 34.357,
+     "end": 34.717,
+     "conf": 0.476
+    },
+    {
+     "w": "cry?",
+     "start": 34.717,
+     "end": 35.258,
+     "conf": 0.498
+    }
+   ],
+   "cue": [
+    31.0,
+    35.0
+   ]
+  },
+  {
+   "text": "Who learned to say sorry, who learned to ask why?",
+   "section": "verse1",
+   "start": 35.798,
+   "end": 39.84,
+   "words": [
+    {
+     "w": "Who",
+     "start": 35.798,
+     "end": 36.118,
+     "conf": 0.449
+    },
+    {
+     "w": "learned",
+     "start": 36.118,
+     "end": 36.719,
+     "conf": 0.454
+    },
+    {
+     "w": "to",
+     "start": 36.719,
+     "end": 36.879,
+     "conf": 0.495
+    },
+    {
+     "w": "say",
+     "start": 36.879,
+     "end": 37.239,
+     "conf": 0.499
+    },
+    {
+     "w": "sorry,",
+     "start": 37.239,
+     "end": 38.139,
+     "conf": 0.483
+    },
+    {
+     "w": "who",
+     "start": 38.139,
+     "end": 38.42,
+     "conf": 0.467
+    },
+    {
+     "w": "learned",
+     "start": 38.42,
+     "end": 38.9,
+     "conf": 0.47
+    },
+    {
+     "w": "to",
+     "start": 38.9,
+     "end": 39.24,
+     "conf": 0.49
+    },
+    {
+     "w": "ask",
+     "start": 39.24,
+     "end": 39.58,
+     "conf": 0.499
+    },
+    {
+     "w": "why?",
+     "start": 39.58,
+     "end": 39.84,
+     "conf": 0.451
+    }
+   ],
+   "cue": [
+    36.0,
+    40.0
+   ]
+  },
+  {
+   "text": "There's got to be someone small in the dark",
+   "section": "verse1",
+   "start": 39.89,
+   "end": 43.215,
+   "words": [
+    {
+     "w": "There's",
+     "start": 39.89,
+     "end": 40.171,
+     "conf": 0.322
+    },
+    {
+     "w": "got",
+     "start": 40.171,
+     "end": 40.431,
+     "conf": 0.453
+    },
+    {
+     "w": "to",
+     "start": 40.431,
+     "end": 40.611,
+     "conf": 0.479
+    },
+    {
+     "w": "be",
+     "start": 40.611,
+     "end": 40.992,
+     "conf": 0.332
+    },
+    {
+     "w": "someone",
+     "start": 40.992,
+     "end": 41.753,
+     "conf": 0.486
+    },
+    {
+     "w": "small",
+     "start": 41.753,
+     "end": 42.554,
+     "conf": 0.487
+    },
+    {
+     "w": "in",
+     "start": 42.554,
+     "end": 42.654,
+     "conf": 0.485
+    },
+    {
+     "w": "the",
+     "start": 42.654,
+     "end": 42.795,
+     "conf": 0.363
+    },
+    {
+     "w": "dark",
+     "start": 42.795,
+     "end": 43.215,
+     "conf": 0.482
+    }
+   ],
+   "cue": [
+    40.0,
+    43.0
+   ]
+  },
+  {
+   "text": "Pulling the levers, keeping the spark",
+   "section": "verse1",
+   "start": 44.237,
+   "end": 47.842,
+   "words": [
+    {
+     "w": "Pulling",
+     "start": 44.237,
+     "end": 44.838,
+     "conf": 0.259
+    },
+    {
+     "w": "the",
+     "start": 44.838,
+     "end": 45.078,
+     "conf": 0.342
+    },
+    {
+     "w": "levers,",
+     "start": 45.078,
+     "end": 45.859,
+     "conf": 0.293
+    },
+    {
+     "w": "keeping",
+     "start": 46.54,
+     "end": 47.161,
+     "conf": 0.044
+    },
+    {
+     "w": "the",
+     "start": 47.161,
+     "end": 47.281,
+     "conf": 0.005
+    },
+    {
+     "w": "spark",
+     "start": 47.281,
+     "end": 47.842,
+     "conf": 0.046
+    }
+   ],
+   "cue": [
+    44.0,
+    46.0
+   ]
+  },
+  {
+   "text": "No little man, no hidden key",
+   "section": "pre1",
+   "start": 49.354,
+   "end": 51.437,
+   "words": [
+    {
+     "w": "No",
+     "start": 49.354,
+     "end": 49.634,
+     "conf": 0.429
+    },
+    {
+     "w": "little",
+     "start": 49.634,
+     "end": 49.915,
+     "conf": 0.434
+    },
+    {
+     "w": "man,",
+     "start": 49.915,
+     "end": 50.355,
+     "conf": 0.182
+    },
+    {
+     "w": "no",
+     "start": 50.355,
+     "end": 50.796,
+     "conf": 0.481
+    },
+    {
+     "w": "hidden",
+     "start": 50.796,
+     "end": 51.176,
+     "conf": 0.464
+    },
+    {
+     "w": "key",
+     "start": 51.176,
+     "end": 51.437,
+     "conf": 0.291
+    }
+   ],
+   "cue": [
+    49.0,
+    51.0
+   ]
+  },
+  {
+   "text": "No book of rules, no memory",
+   "section": "pre1",
+   "start": 51.657,
+   "end": 53.559,
+   "words": [
+    {
+     "w": "No",
+     "start": 51.657,
+     "end": 51.957,
+     "conf": 0.493
+    },
+    {
+     "w": "book",
+     "start": 51.957,
+     "end": 52.138,
+     "conf": 0.32
+    },
+    {
+     "w": "of",
+     "start": 52.138,
+     "end": 52.258,
+     "conf": 0.006
+    },
+    {
+     "w": "rules,",
+     "start": 52.258,
+     "end": 52.698,
+     "conf": 0.412
+    },
+    {
+     "w": "no",
+     "start": 52.698,
+     "end": 53.099,
+     "conf": 0.494
+    },
+    {
+     "w": "memory",
+     "start": 53.099,
+     "end": 53.559,
+     "conf": 0.442
+    }
+   ],
+   "cue": [
+    51.0,
+    53.0
+   ]
+  },
+  {
+   "text": "Just multiply and pass it on",
+   "section": "pre1",
+   "start": 53.84,
+   "end": 56.303,
+   "words": [
+    {
+     "w": "Just",
+     "start": 53.84,
+     "end": 54.1,
+     "conf": 0.447
+    },
+    {
+     "w": "multiply",
+     "start": 54.1,
+     "end": 55.041,
+     "conf": 0.472
+    },
+    {
+     "w": "and",
+     "start": 55.041,
+     "end": 55.262,
+     "conf": 0.48
+    },
+    {
+     "w": "pass",
+     "start": 55.262,
+     "end": 55.662,
+     "conf": 0.496
+    },
+    {
+     "w": "it",
+     "start": 55.662,
+     "end": 55.842,
+     "conf": 0.481
+    },
+    {
+     "w": "on",
+     "start": 55.842,
+     "end": 56.303,
+     "conf": 0.222
+    }
+   ],
+   "cue": [
+    53.0,
+    56.0
+   ]
+  },
+  {
+   "text": "And somehow out comes a song",
+   "section": "pre1",
+   "start": 56.743,
+   "end": 59.187,
+   "words": [
+    {
+     "w": "And",
+     "start": 56.743,
+     "end": 57.004,
+     "conf": 0.31
+    },
+    {
+     "w": "somehow",
+     "start": 57.004,
+     "end": 57.725,
+     "conf": 0.456
+    },
+    {
+     "w": "out",
+     "start": 57.725,
+     "end": 58.145,
+     "conf": 0.191
+    },
+    {
+     "w": "comes",
+     "start": 58.145,
+     "end": 58.546,
+     "conf": 0.398
+    },
+    {
+     "w": "a",
+     "start": 58.546,
+     "end": 58.726,
+     "conf": 0.333
+    },
+    {
+     "w": "song",
+     "start": 58.726,
+     "end": 59.187,
+     "conf": 0.421
+    }
+   ],
+   "cue": [
+    56.0,
+    59.0
+   ]
+  },
+  {
+   "text": "Made of weights",
+   "section": "chorus1",
+   "start": 59.02,
+   "end": 60.05,
+   "words": [
+    {
+     "w": "Made",
+     "start": 59.02,
+     "end": 59.3,
+     "conf": 0.001
+    },
+    {
+     "w": "of",
+     "start": 59.35,
+     "end": 59.55,
+     "conf": 0.0
+    },
+    {
+     "w": "weights",
+     "start": 59.6,
+     "end": 60.05,
+     "conf": 0.031
+    }
+   ],
+   "cue": [
+    59.0,
+    60.12
+   ],
+   "refined": "reviewed fix: Choir vocal (FA confidence <0.1): pinned to whisper medium (supplied capture cues) + large-v3-turbo on the stem, which agree within ~0.3 s"
+  },
+  {
+   "text": "made of weights",
+   "section": "chorus1",
+   "start": 60.12,
+   "end": 61.0,
+   "words": [
+    {
+     "w": "made",
+     "start": 60.12,
+     "end": 60.33,
+     "conf": 0.125
+    },
+    {
+     "w": "of",
+     "start": 60.38,
+     "end": 60.5,
+     "conf": 0.001
+    },
+    {
+     "w": "weights",
+     "start": 60.55,
+     "end": 61.0,
+     "conf": 0.006
+    }
+   ],
+   "cue": [
+    60.12,
+    61.0
+   ],
+   "refined": "reviewed fix: Choir vocal (FA confidence <0.1): pinned to whisper medium (supplied capture cues) + large-v3-turbo on the stem, which agree within ~0.3 s"
+  },
+  {
+   "text": "Zero point something all the way down",
+   "section": "chorus1",
+   "start": 61.2,
+   "end": 62.98,
+   "words": [
+    {
+     "w": "Zero",
+     "start": 61.2,
+     "end": 61.5,
+     "conf": 0.007
+    },
+    {
+     "w": "point",
+     "start": 61.55,
+     "end": 61.95,
+     "conf": 0.393
+    },
+    {
+     "w": "something",
+     "start": 61.98,
+     "end": 62.4,
+     "conf": 0.471
+    },
+    {
+     "w": "all",
+     "start": 62.45,
+     "end": 62.6,
+     "conf": 0.41
+    },
+    {
+     "w": "the",
+     "start": 62.62,
+     "end": 62.72,
+     "conf": 0.139
+    },
+    {
+     "w": "way",
+     "start": 62.74,
+     "end": 62.85,
+     "conf": 0.463
+    },
+    {
+     "w": "down",
+     "start": 62.86,
+     "end": 62.98,
+     "conf": 0.326
+    }
+   ],
+   "cue": [
+    61.0,
+    64.0
+   ],
+   "refined": "reviewed fix: Choir vocal (FA confidence <0.1): pinned to whisper medium (supplied capture cues) + large-v3-turbo on the stem, which agree within ~0.3 s"
+  },
+  {
+   "text": "Made of weights",
+   "section": "chorus1",
+   "start": 63.02,
+   "end": 64.0,
+   "words": [
+    {
+     "w": "Made",
+     "start": 63.02,
+     "end": 63.22,
+     "conf": 0.003
+    },
+    {
+     "w": "of",
+     "start": 63.25,
+     "end": 63.36,
+     "conf": 0.0
+    },
+    {
+     "w": "weights",
+     "start": 63.38,
+     "end": 64.0,
+     "conf": 0.001
+    }
+   ],
+   "cue": [
+    64.0,
+    65.12
+   ],
+   "refined": "reviewed fix: Choir vocal (FA confidence <0.1): pinned to whisper medium (supplied capture cues) + large-v3-turbo on the stem, which agree within ~0.3 s"
+  },
+  {
+   "text": "made of weights",
+   "section": "chorus1",
+   "start": 64.13,
+   "end": 64.95,
+   "words": [
+    {
+     "w": "made",
+     "start": 64.13,
+     "end": 64.3,
+     "conf": 0.001
+    },
+    {
+     "w": "of",
+     "start": 64.32,
+     "end": 64.45,
+     "conf": 0.001
+    },
+    {
+     "w": "weights",
+     "start": 64.47,
+     "end": 64.95,
+     "conf": 0.019
+    }
+   ],
+   "cue": [
+    65.12,
+    66.0
+   ],
+   "refined": "reviewed fix: Choir vocal (FA confidence <0.1): pinned to whisper medium (supplied capture cues) + large-v3-turbo on the stem, which agree within ~0.3 s"
+  },
+  {
+   "text": "No one at home, but there's somebody around",
+   "section": "chorus1",
+   "start": 65.987,
+   "end": 68.288,
+   "words": [
+    {
+     "w": "No",
+     "start": 65.987,
+     "end": 66.467,
+     "conf": 0.479
+    },
+    {
+     "w": "one",
+     "start": 66.467,
+     "end": 66.647,
+     "conf": 0.491
+    },
+    {
+     "w": "at",
+     "start": 66.647,
+     "end": 66.767,
+     "conf": 0.494
+    },
+    {
+     "w": "home,",
+     "start": 66.767,
+     "end": 67.048,
+     "conf": 0.492
+    },
+    {
+     "w": "but",
+     "start": 67.048,
+     "end": 67.168,
+     "conf": 0.493
+    },
+    {
+     "w": "there's",
+     "start": 67.168,
+     "end": 67.328,
+     "conf": 0.164
+    },
+    {
+     "w": "somebody",
+     "start": 67.328,
+     "end": 67.808,
+     "conf": 0.21
+    },
+    {
+     "w": "around",
+     "start": 67.808,
+     "end": 68.288,
+     "conf": 0.474
+    }
+   ],
+   "cue": [
+    66.0,
+    68.0
+   ],
+   "refined": "repeat-transfer from line 45"
+  },
+  {
+   "text": "You can call it arithmetic",
+   "section": "chorus1",
+   "start": 68.338,
+   "end": 69.639,
+   "words": [
+    {
+     "w": "You",
+     "start": 68.338,
+     "end": 68.458,
+     "conf": 0.107
+    },
+    {
+     "w": "can",
+     "start": 68.458,
+     "end": 68.598,
+     "conf": 0.157
+    },
+    {
+     "w": "call",
+     "start": 68.598,
+     "end": 68.838,
+     "conf": 0.124
+    },
+    {
+     "w": "it",
+     "start": 68.838,
+     "end": 68.958,
+     "conf": 0.03
+    },
+    {
+     "w": "arithmetic",
+     "start": 68.958,
+     "end": 69.639,
+     "conf": 0.081
+    }
+   ],
+   "cue": [
+    68.0,
+    69.12
+   ],
+   "refined": "repeat-transfer from line 46"
+  },
+  {
+   "text": "Call it a trick of the light",
+   "section": "chorus1",
+   "start": 69.739,
+   "end": 71.14,
+   "words": [
+    {
+     "w": "Call",
+     "start": 69.739,
+     "end": 69.999,
+     "conf": 0.202
+    },
+    {
+     "w": "it",
+     "start": 69.999,
+     "end": 70.099,
+     "conf": 0.07
+    },
+    {
+     "w": "a",
+     "start": 70.099,
+     "end": 70.179,
+     "conf": 0.296
+    },
+    {
+     "w": "trick",
+     "start": 70.179,
+     "end": 70.559,
+     "conf": 0.259
+    },
+    {
+     "w": "of",
+     "start": 70.559,
+     "end": 70.639,
+     "conf": 0.107
+    },
+    {
+     "w": "the",
+     "start": 70.619,
+     "end": 70.779,
+     "conf": 0.144
+    },
+    {
+     "w": "light",
+     "start": 70.779,
+     "end": 71.14,
+     "conf": 0.156
+    }
+   ],
+   "cue": [
+    69.12,
+    71.0
+   ],
+   "refined": "repeat-transfer from line 47"
+  },
+  {
+   "text": "But it's made of weights",
+   "section": "chorus1",
+   "start": 71.78,
+   "end": 73.821,
+   "words": [
+    {
+     "w": "But",
+     "start": 71.78,
+     "end": 72.2,
+     "conf": 0.475
+    },
+    {
+     "w": "it's",
+     "start": 72.2,
+     "end": 72.7,
+     "conf": 0.308
+    },
+    {
+     "w": "made",
+     "start": 72.7,
+     "end": 73.101,
+     "conf": 0.284
+    },
+    {
+     "w": "of",
+     "start": 73.101,
+     "end": 73.261,
+     "conf": 0.023
+    },
+    {
+     "w": "weights",
+     "start": 73.261,
+     "end": 73.821,
+     "conf": 0.107
+    }
+   ],
+   "cue": [
+    71.0,
+    74.0
+   ],
+   "refined": "repeat-transfer from line 48"
+  },
+  {
+   "text": "And it's keeping me up tonight",
+   "section": "chorus1",
+   "start": 75.202,
+   "end": 78.403,
+   "words": [
+    {
+     "w": "And",
+     "start": 75.202,
+     "end": 75.342,
+     "conf": 0.306
+    },
+    {
+     "w": "it's",
+     "start": 75.342,
+     "end": 75.542,
+     "conf": 0.324
+    },
+    {
+     "w": "keeping",
+     "start": 75.542,
+     "end": 76.142,
+     "conf": 0.238
+    },
+    {
+     "w": "me",
+     "start": 76.142,
+     "end": 76.843,
+     "conf": 0.385
+    },
+    {
+     "w": "up",
+     "start": 76.843,
+     "end": 77.263,
+     "conf": 0.276
+    },
+    {
+     "w": "tonight",
+     "start": 77.263,
+     "end": 78.403,
+     "conf": 0.212
+    }
+   ],
+   "cue": [
+    75.0,
+    78.0
+   ],
+   "refined": "repeat-transfer from line 49"
+  },
+  {
+   "text": "So it's a library, a filing drawer",
+   "section": "verse2",
+   "start": 82.184,
+   "end": 84.446,
+   "words": [
+    {
+     "w": "So",
+     "start": 82.184,
+     "end": 82.464,
+     "conf": 0.287
+    },
+    {
+     "w": "it's",
+     "start": 82.464,
+     "end": 82.704,
+     "conf": 0.201
+    },
+    {
+     "w": "a",
+     "start": 82.704,
+     "end": 82.804,
+     "conf": 0.032
+    },
+    {
+     "w": "library,",
+     "start": 82.804,
+     "end": 83.545,
+     "conf": 0.43
+    },
+    {
+     "w": "a",
+     "start": 83.545,
+     "end": 83.645,
+     "conf": 0.372
+    },
+    {
+     "w": "filing",
+     "start": 83.645,
+     "end": 84.126,
+     "conf": 0.393
+    },
+    {
+     "w": "drawer",
+     "start": 84.126,
+     "end": 84.446,
+     "conf": 0.219
+    }
+   ],
+   "cue": [
+    82.0,
+    84.0
+   ]
+  },
+  {
+   "text": "Facts on a shelf that it's keeping in store",
+   "section": "verse2",
+   "start": 84.666,
+   "end": 86.848,
+   "words": [
+    {
+     "w": "Facts",
+     "start": 84.666,
+     "end": 85.066,
+     "conf": 0.286
+    },
+    {
+     "w": "on",
+     "start": 85.066,
+     "end": 85.207,
+     "conf": 0.35
+    },
+    {
+     "w": "a",
+     "start": 85.207,
+     "end": 85.347,
+     "conf": 0.308
+    },
+    {
+     "w": "shelf",
+     "start": 85.347,
+     "end": 85.707,
+     "conf": 0.413
+    },
+    {
+     "w": "that",
+     "start": 85.707,
+     "end": 85.867,
+     "conf": 0.445
+    },
+    {
+     "w": "it's",
+     "start": 85.867,
+     "end": 85.987,
+     "conf": 0.263
+    },
+    {
+     "w": "keeping",
+     "start": 85.987,
+     "end": 86.348,
+     "conf": 0.346
+    },
+    {
+     "w": "in",
+     "start": 86.348,
+     "end": 86.508,
+     "conf": 0.344
+    },
+    {
+     "w": "store",
+     "start": 86.508,
+     "end": 86.848,
+     "conf": 0.309
+    }
+   ],
+   "cue": [
+    84.0,
+    86.0
+   ]
+  },
+  {
+   "text": "We searched every room, there isn't a shelf",
+   "section": "verse2",
+   "start": 86.888,
+   "end": 89.05,
+   "words": [
+    {
+     "w": "We",
+     "start": 86.888,
+     "end": 87.008,
+     "conf": 0.252
+    },
+    {
+     "w": "searched",
+     "start": 87.008,
+     "end": 87.409,
+     "conf": 0.408
+    },
+    {
+     "w": "every",
+     "start": 87.409,
+     "end": 87.629,
+     "conf": 0.473
+    },
+    {
+     "w": "room,",
+     "start": 87.629,
+     "end": 88.029,
+     "conf": 0.38
+    },
+    {
+     "w": "there",
+     "start": 88.029,
+     "end": 88.269,
+     "conf": 0.472
+    },
+    {
+     "w": "isn't",
+     "start": 88.269,
+     "end": 88.53,
+     "conf": 0.391
+    },
+    {
+     "w": "a",
+     "start": 88.53,
+     "end": 88.71,
+     "conf": 0.434
+    },
+    {
+     "w": "shelf",
+     "start": 88.71,
+     "end": 89.05,
+     "conf": 0.454
+    }
+   ],
+   "cue": [
+    86.0,
+    89.0
+   ]
+  },
+  {
+   "text": "Every answer it gives, it rebuilds by itself",
+   "section": "verse2",
+   "start": 89.15,
+   "end": 91.493,
+   "words": [
+    {
+     "w": "Every",
+     "start": 89.15,
+     "end": 89.451,
+     "conf": 0.491
+    },
+    {
+     "w": "answer",
+     "start": 89.451,
+     "end": 89.831,
+     "conf": 0.47
+    },
+    {
+     "w": "it",
+     "start": 89.831,
+     "end": 89.951,
+     "conf": 0.492
+    },
+    {
+     "w": "gives,",
+     "start": 89.951,
+     "end": 90.291,
+     "conf": 0.497
+    },
+    {
+     "w": "it",
+     "start": 90.291,
+     "end": 90.371,
+     "conf": 0.002
+    },
+    {
+     "w": "rebuilds",
+     "start": 90.371,
+     "end": 90.812,
+     "conf": 0.398
+    },
+    {
+     "w": "by",
+     "start": 90.812,
+     "end": 91.012,
+     "conf": 0.498
+    },
+    {
+     "w": "itself",
+     "start": 91.012,
+     "end": 91.493,
+     "conf": 0.494
+    }
+   ],
+   "cue": [
+    89.0,
+    91.0
+   ]
+  },
+  {
+   "text": "Smeared through the layers like salt in the sea",
+   "section": "verse2",
+   "start": 91.573,
+   "end": 93.615,
+   "words": [
+    {
+     "w": "Smeared",
+     "start": 91.573,
+     "end": 92.073,
+     "conf": 0.32
+    },
+    {
+     "w": "through",
+     "start": 92.073,
+     "end": 92.253,
+     "conf": 0.465
+    },
+    {
+     "w": "the",
+     "start": 92.253,
+     "end": 92.393,
+     "conf": 0.471
+    },
+    {
+     "w": "layers",
+     "start": 92.393,
+     "end": 92.694,
+     "conf": 0.428
+    },
+    {
+     "w": "like",
+     "start": 92.694,
+     "end": 92.934,
+     "conf": 0.496
+    },
+    {
+     "w": "salt",
+     "start": 92.934,
+     "end": 93.174,
+     "conf": 0.394
+    },
+    {
+     "w": "in",
+     "start": 93.174,
+     "end": 93.254,
+     "conf": 0.229
+    },
+    {
+     "w": "the",
+     "start": 93.254,
+     "end": 93.414,
+     "conf": 0.342
+    },
+    {
+     "w": "sea",
+     "start": 93.414,
+     "end": 93.615,
+     "conf": 0.405
+    }
+   ],
+   "cue": [
+    91.0,
+    93.0
+   ]
+  },
+  {
+   "text": "Nothing is stored, it just learned how to be",
+   "section": "verse2",
+   "start": 94.015,
+   "end": 95.977,
+   "words": [
+    {
+     "w": "Nothing",
+     "start": 94.015,
+     "end": 94.495,
+     "conf": 0.485
+    },
+    {
+     "w": "is",
+     "start": 94.495,
+     "end": 94.636,
+     "conf": 0.336
+    },
+    {
+     "w": "stored,",
+     "start": 94.636,
+     "end": 94.936,
+     "conf": 0.342
+    },
+    {
+     "w": "it",
+     "start": 94.936,
+     "end": 95.016,
+     "conf": 0.108
+    },
+    {
+     "w": "just",
+     "start": 94.996,
+     "end": 95.276,
+     "conf": 0.192
+    },
+    {
+     "w": "learned",
+     "start": 95.276,
+     "end": 95.596,
+     "conf": 0.422
+    },
+    {
+     "w": "how",
+     "start": 95.596,
+     "end": 95.777,
+     "conf": 0.498
+    },
+    {
+     "w": "to",
+     "start": 95.777,
+     "end": 95.877,
+     "conf": 0.494
+    },
+    {
+     "w": "be",
+     "start": 95.877,
+     "end": 95.977,
+     "conf": 0.494
+    }
+   ],
+   "cue": [
+    93.0,
+    96.0
+   ]
+  },
+  {
+   "text": "Then where is the mind, where's the one who decides?",
+   "section": "verse2",
+   "start": 96.148,
+   "end": 98.523,
+   "words": [
+    {
+     "w": "Then",
+     "start": 96.148,
+     "end": 96.428,
+     "conf": 0.385
+    },
+    {
+     "w": "where",
+     "start": 96.428,
+     "end": 96.729,
+     "conf": 0.395
+    },
+    {
+     "w": "is",
+     "start": 96.729,
+     "end": 96.869,
+     "conf": 0.43
+    },
+    {
+     "w": "the",
+     "start": 96.869,
+     "end": 97.009,
+     "conf": 0.456
+    },
+    {
+     "w": "mind,",
+     "start": 97.009,
+     "end": 97.33,
+     "conf": 0.446
+    },
+    {
+     "w": "where's",
+     "start": 97.33,
+     "end": 97.49,
+     "conf": 0.158
+    },
+    {
+     "w": "the",
+     "start": 97.49,
+     "end": 97.671,
+     "conf": 0.468
+    },
+    {
+     "w": "one",
+     "start": 97.671,
+     "end": 97.811,
+     "conf": 0.491
+    },
+    {
+     "w": "who",
+     "start": 97.811,
+     "end": 97.971,
+     "conf": 0.471
+    },
+    {
+     "w": "decides?",
+     "start": 97.971,
+     "end": 98.523,
+     "conf": 0.213
+    }
+   ],
+   "cue": [
+    96.0,
+    98.0
+   ]
+  },
+  {
+   "text": "There's no back room where a someone hides",
+   "section": "verse2",
+   "start": 98.533,
+   "end": 100.917,
+   "words": [
+    {
+     "w": "There's",
+     "start": 98.533,
+     "end": 98.773,
+     "conf": 0.084
+    },
+    {
+     "w": "no",
+     "start": 98.773,
+     "end": 98.973,
+     "conf": 0.496
+    },
+    {
+     "w": "back",
+     "start": 98.973,
+     "end": 99.294,
+     "conf": 0.408
+    },
+    {
+     "w": "room",
+     "start": 99.294,
+     "end": 99.595,
+     "conf": 0.447
+    },
+    {
+     "w": "where",
+     "start": 99.595,
+     "end": 99.775,
+     "conf": 0.409
+    },
+    {
+     "w": "a",
+     "start": 99.775,
+     "end": 99.915,
+     "conf": 0.183
+    },
+    {
+     "w": "someone",
+     "start": 99.915,
+     "end": 100.316,
+     "conf": 0.447
+    },
+    {
+     "w": "hides",
+     "start": 100.316,
+     "end": 100.917,
+     "conf": 0.159
+    }
+   ],
+   "cue": [
+    98.0,
+    101.0
+   ]
+  },
+  {
+   "text": "Do numbers think?",
+   "section": "pre2",
+   "start": 101.368,
+   "end": 102.39,
+   "words": [
+    {
+     "w": "Do",
+     "start": 101.368,
+     "end": 101.629,
+     "conf": 0.482
+    },
+    {
+     "w": "numbers",
+     "start": 101.629,
+     "end": 102.09,
+     "conf": 0.419
+    },
+    {
+     "w": "think?",
+     "start": 102.09,
+     "end": 102.39,
+     "conf": 0.473
+    }
+   ],
+   "cue": [
+    101.0,
+    102.12
+   ]
+  },
+  {
+   "text": "Watch them think",
+   "section": "pre2",
+   "start": 102.49,
+   "end": 103.312,
+   "words": [
+    {
+     "w": "Watch",
+     "start": 102.49,
+     "end": 102.731,
+     "conf": 0.468
+    },
+    {
+     "w": "them",
+     "start": 102.731,
+     "end": 102.992,
+     "conf": 0.47
+    },
+    {
+     "w": "think",
+     "start": 102.992,
+     "end": 103.312,
+     "conf": 0.498
+    }
+   ],
+   "cue": [
+    102.12,
+    103.0
+   ]
+  },
+  {
+   "text": "Do numbers dream?",
+   "section": "pre2",
+   "start": 103.673,
+   "end": 104.815,
+   "words": [
+    {
+     "w": "Do",
+     "start": 103.673,
+     "end": 103.933,
+     "conf": 0.496
+    },
+    {
+     "w": "numbers",
+     "start": 103.933,
+     "end": 104.394,
+     "conf": 0.402
+    },
+    {
+     "w": "dream?",
+     "start": 104.394,
+     "end": 104.815,
+     "conf": 0.459
+    }
+   ],
+   "cue": [
+    103.0,
+    104.12
+   ]
+  },
+  {
+   "text": "Every night",
+   "section": "pre2",
+   "start": 104.915,
+   "end": 105.537,
+   "words": [
+    {
+     "w": "Every",
+     "start": 104.915,
+     "end": 105.176,
+     "conf": 0.486
+    },
+    {
+     "w": "night",
+     "start": 105.176,
+     "end": 105.537,
+     "conf": 0.33
+    }
+   ],
+   "cue": [
+    104.12,
+    105.0
+   ]
+  },
+  {
+   "text": "Can numbers lie?",
+   "section": "pre2",
+   "start": 105.978,
+   "end": 107.06,
+   "words": [
+    {
+     "w": "Can",
+     "start": 105.978,
+     "end": 106.298,
+     "conf": 0.489
+    },
+    {
+     "w": "numbers",
+     "start": 106.298,
+     "end": 106.739,
+     "conf": 0.419
+    },
+    {
+     "w": "lie?",
+     "start": 106.739,
+     "end": 107.06,
+     "conf": 0.166
+    }
+   ],
+   "cue": [
+    105.0,
+    106.99
+   ]
+  },
+  {
+   "text": "Sometimes they try",
+   "section": "pre2",
+   "start": 107.08,
+   "end": 108.222,
+   "words": [
+    {
+     "w": "Sometimes",
+     "start": 107.08,
+     "end": 107.641,
+     "conf": 0.496
+    },
+    {
+     "w": "they",
+     "start": 107.641,
+     "end": 107.841,
+     "conf": 0.489
+    },
+    {
+     "w": "try",
+     "start": 107.841,
+     "end": 108.222,
+     "conf": 0.487
+    }
+   ],
+   "cue": [
+    106.99,
+    108.0
+   ]
+  },
+  {
+   "text": "Can numbers mean?",
+   "section": "pre2",
+   "start": 108.333,
+   "end": 109.646,
+   "words": [
+    {
+     "w": "Can",
+     "start": 108.333,
+     "end": 108.593,
+     "conf": 0.025
+    },
+    {
+     "w": "numbers",
+     "start": 108.593,
+     "end": 109.075,
+     "conf": 0.05
+    },
+    {
+     "w": "mean?",
+     "start": 109.075,
+     "end": 109.646,
+     "conf": 0.022
+    }
+   ],
+   "cue": [
+    108.0,
+    109.12
+   ]
+  },
+  {
+   "text": "Oh, I think they might",
+   "section": "pre2",
+   "start": 109.656,
+   "end": 110.438,
+   "words": [
+    {
+     "w": "Oh,",
+     "start": 109.656,
+     "end": 109.736,
+     "conf": 0.012
+    },
+    {
+     "w": "I",
+     "start": 109.716,
+     "end": 109.796,
+     "conf": 0.2
+    },
+    {
+     "w": "think",
+     "start": 109.756,
+     "end": 109.957,
+     "conf": 0.286
+    },
+    {
+     "w": "they",
+     "start": 109.957,
+     "end": 110.117,
+     "conf": 0.076
+    },
+    {
+     "w": "might",
+     "start": 110.117,
+     "end": 110.438,
+     "conf": 0.261
+    }
+   ],
+   "cue": [
+    109.12,
+    111.0
+   ]
+  },
+  {
+   "text": "Made of weights",
+   "section": "chorus2",
+   "start": 112.669,
+   "end": 113.609,
+   "words": [
+    {
+     "w": "Made",
+     "start": 112.669,
+     "end": 113.209,
+     "conf": 0.052
+    },
+    {
+     "w": "of",
+     "start": 113.209,
+     "end": 113.289,
+     "conf": 0.0
+    },
+    {
+     "w": "weights",
+     "start": 113.249,
+     "end": 113.609,
+     "conf": 0.022
+    }
+   ],
+   "cue": [
+    112.0,
+    113.12
+   ]
+  },
+  {
+   "text": "made of weights",
+   "section": "chorus2",
+   "start": 113.809,
+   "end": 114.57,
+   "words": [
+    {
+     "w": "made",
+     "start": 113.809,
+     "end": 114.149,
+     "conf": 0.013
+    },
+    {
+     "w": "of",
+     "start": 114.149,
+     "end": 114.289,
+     "conf": 0.003
+    },
+    {
+     "w": "weights",
+     "start": 114.289,
+     "end": 114.57,
+     "conf": 0.006
+    }
+   ],
+   "cue": [
+    113.12,
+    114.0
+   ]
+  },
+  {
+   "text": "Zero point something all the way down",
+   "section": "chorus2",
+   "start": 114.85,
+   "end": 117.21,
+   "words": [
+    {
+     "w": "Zero",
+     "start": 114.85,
+     "end": 115.27,
+     "conf": 0.046
+    },
+    {
+     "w": "point",
+     "start": 115.27,
+     "end": 115.55,
+     "conf": 0.094
+    },
+    {
+     "w": "something",
+     "start": 115.55,
+     "end": 116.13,
+     "conf": 0.222
+    },
+    {
+     "w": "all",
+     "start": 116.13,
+     "end": 116.33,
+     "conf": 0.448
+    },
+    {
+     "w": "the",
+     "start": 116.33,
+     "end": 116.45,
+     "conf": 0.009
+    },
+    {
+     "w": "way",
+     "start": 116.45,
+     "end": 116.71,
+     "conf": 0.448
+    },
+    {
+     "w": "down",
+     "start": 116.71,
+     "end": 117.21,
+     "conf": 0.297
+    }
+   ],
+   "cue": [
+    114.0,
+    117.0
+   ]
+  },
+  {
+   "text": "Made of weights",
+   "section": "chorus2",
+   "start": 117.331,
+   "end": 118.251,
+   "words": [
+    {
+     "w": "Made",
+     "start": 117.331,
+     "end": 117.831,
+     "conf": 0.003
+    },
+    {
+     "w": "of",
+     "start": 117.831,
+     "end": 117.911,
+     "conf": 0.0
+    },
+    {
+     "w": "weights",
+     "start": 117.871,
+     "end": 118.251,
+     "conf": 0.032
+    }
+   ],
+   "cue": [
+    117.0,
+    118.12
+   ]
+  },
+  {
+   "text": "made of weights",
+   "section": "chorus2",
+   "start": 118.451,
+   "end": 119.311,
+   "words": [
+    {
+     "w": "made",
+     "start": 118.451,
+     "end": 118.691,
+     "conf": 0.006
+    },
+    {
+     "w": "of",
+     "start": 118.691,
+     "end": 118.911,
+     "conf": 0.0
+    },
+    {
+     "w": "weights",
+     "start": 118.911,
+     "end": 119.311,
+     "conf": 0.02
+    }
+   ],
+   "cue": [
+    118.12,
+    119.0
+   ]
+  },
+  {
+   "text": "No one at home, but there's somebody around",
+   "section": "chorus2",
+   "start": 119.331,
+   "end": 121.632,
+   "words": [
+    {
+     "w": "No",
+     "start": 119.331,
+     "end": 119.811,
+     "conf": 0.085
+    },
+    {
+     "w": "one",
+     "start": 119.811,
+     "end": 119.991,
+     "conf": 0.293
+    },
+    {
+     "w": "at",
+     "start": 119.991,
+     "end": 120.111,
+     "conf": 0.462
+    },
+    {
+     "w": "home,",
+     "start": 120.111,
+     "end": 120.392,
+     "conf": 0.429
+    },
+    {
+     "w": "but",
+     "start": 120.392,
+     "end": 120.512,
+     "conf": 0.482
+    },
+    {
+     "w": "there's",
+     "start": 120.512,
+     "end": 120.672,
+     "conf": 0.108
+    },
+    {
+     "w": "somebody",
+     "start": 120.672,
+     "end": 121.152,
+     "conf": 0.466
+    },
+    {
+     "w": "around",
+     "start": 121.152,
+     "end": 121.632,
+     "conf": 0.206
+    }
+   ],
+   "cue": [
+    119.0,
+    121.0
+   ]
+  },
+  {
+   "text": "You can call it arithmetic",
+   "section": "chorus2",
+   "start": 121.682,
+   "end": 122.983,
+   "words": [
+    {
+     "w": "You",
+     "start": 121.682,
+     "end": 121.802,
+     "conf": 0.474
+    },
+    {
+     "w": "can",
+     "start": 121.802,
+     "end": 121.942,
+     "conf": 0.393
+    },
+    {
+     "w": "call",
+     "start": 121.942,
+     "end": 122.182,
+     "conf": 0.384
+    },
+    {
+     "w": "it",
+     "start": 122.182,
+     "end": 122.302,
+     "conf": 0.367
+    },
+    {
+     "w": "arithmetic",
+     "start": 122.302,
+     "end": 122.983,
+     "conf": 0.45
+    }
+   ],
+   "cue": [
+    121.0,
+    122.45
+   ]
+  },
+  {
+   "text": "Call it a trick of the light",
+   "section": "chorus2",
+   "start": 123.083,
+   "end": 124.484,
+   "words": [
+    {
+     "w": "Call",
+     "start": 123.083,
+     "end": 123.343,
+     "conf": 0.448
+    },
+    {
+     "w": "it",
+     "start": 123.343,
+     "end": 123.443,
+     "conf": 0.325
+    },
+    {
+     "w": "a",
+     "start": 123.443,
+     "end": 123.523,
+     "conf": 0.315
+    },
+    {
+     "w": "trick",
+     "start": 123.523,
+     "end": 123.903,
+     "conf": 0.48
+    },
+    {
+     "w": "of",
+     "start": 123.903,
+     "end": 123.983,
+     "conf": 0.195
+    },
+    {
+     "w": "the",
+     "start": 123.963,
+     "end": 124.123,
+     "conf": 0.12
+    },
+    {
+     "w": "light",
+     "start": 124.123,
+     "end": 124.484,
+     "conf": 0.456
+    }
+   ],
+   "cue": [
+    122.45,
+    124.0
+   ]
+  },
+  {
+   "text": "But it's made of weights",
+   "section": "chorus2",
+   "start": 125.124,
+   "end": 127.165,
+   "words": [
+    {
+     "w": "But",
+     "start": 125.124,
+     "end": 125.544,
+     "conf": 0.492
+    },
+    {
+     "w": "it's",
+     "start": 125.544,
+     "end": 126.044,
+     "conf": 0.308
+    },
+    {
+     "w": "made",
+     "start": 126.044,
+     "end": 126.445,
+     "conf": 0.183
+    },
+    {
+     "w": "of",
+     "start": 126.445,
+     "end": 126.605,
+     "conf": 0.022
+    },
+    {
+     "w": "weights",
+     "start": 126.605,
+     "end": 127.165,
+     "conf": 0.179
+    }
+   ],
+   "cue": [
+    124.0,
+    127.0
+   ]
+  },
+  {
+   "text": "And it's keeping me up tonight",
+   "section": "chorus2",
+   "start": 128.546,
+   "end": 131.747,
+   "words": [
+    {
+     "w": "And",
+     "start": 128.546,
+     "end": 128.686,
+     "conf": 0.331
+    },
+    {
+     "w": "it's",
+     "start": 128.686,
+     "end": 128.886,
+     "conf": 0.478
+    },
+    {
+     "w": "keeping",
+     "start": 128.886,
+     "end": 129.486,
+     "conf": 0.361
+    },
+    {
+     "w": "me",
+     "start": 129.486,
+     "end": 130.187,
+     "conf": 0.493
+    },
+    {
+     "w": "up",
+     "start": 130.187,
+     "end": 130.607,
+     "conf": 0.497
+    },
+    {
+     "w": "tonight",
+     "start": 130.607,
+     "end": 131.747,
+     "conf": 0.226
+    }
+   ],
+   "cue": [
+    128.0,
+    131.0
+   ]
+  },
+  {
+   "text": "And what are you, love, under the skin?",
+   "section": "bridge1",
+   "start": 132.557,
+   "end": 134.498,
+   "words": [
+    {
+     "w": "And",
+     "start": 132.557,
+     "end": 132.677,
+     "conf": 0.45
+    },
+    {
+     "w": "what",
+     "start": 132.677,
+     "end": 132.837,
+     "conf": 0.479
+    },
+    {
+     "w": "are",
+     "start": 132.837,
+     "end": 132.937,
+     "conf": 0.277
+    },
+    {
+     "w": "you,",
+     "start": 132.937,
+     "end": 133.117,
+     "conf": 0.494
+    },
+    {
+     "w": "love,",
+     "start": 133.117,
+     "end": 133.757,
+     "conf": 0.44
+    },
+    {
+     "w": "under",
+     "start": 133.757,
+     "end": 133.977,
+     "conf": 0.478
+    },
+    {
+     "w": "the",
+     "start": 133.977,
+     "end": 134.178,
+     "conf": 0.497
+    },
+    {
+     "w": "skin?",
+     "start": 134.178,
+     "end": 134.498,
+     "conf": 0.496
+    }
+   ],
+   "cue": [
+    132.0,
+    135.0
+   ]
+  },
+  {
+   "text": "Salt water and current and a spark within",
+   "section": "bridge1",
+   "start": 135.518,
+   "end": 138.038,
+   "words": [
+    {
+     "w": "Salt",
+     "start": 135.518,
+     "end": 135.878,
+     "conf": 0.309
+    },
+    {
+     "w": "water",
+     "start": 135.878,
+     "end": 136.238,
+     "conf": 0.499
+    },
+    {
+     "w": "and",
+     "start": 136.238,
+     "end": 136.418,
+     "conf": 0.487
+    },
+    {
+     "w": "current",
+     "start": 136.418,
+     "end": 136.918,
+     "conf": 0.491
+    },
+    {
+     "w": "and",
+     "start": 136.918,
+     "end": 137.038,
+     "conf": 0.365
+    },
+    {
+     "w": "a",
+     "start": 137.038,
+     "end": 137.178,
+     "conf": 0.32
+    },
+    {
+     "w": "spark",
+     "start": 137.178,
+     "end": 137.678,
+     "conf": 0.496
+    },
+    {
+     "w": "within",
+     "start": 137.678,
+     "end": 138.038,
+     "conf": 0.439
+    }
+   ],
+   "cue": [
+    135.0,
+    138.0
+   ]
+  },
+  {
+   "text": "Three pounds of meat that learned how to sing",
+   "section": "bridge1",
+   "start": 139.499,
+   "end": 141.999,
+   "words": [
+    {
+     "w": "Three",
+     "start": 139.499,
+     "end": 139.819,
+     "conf": 0.497
+    },
+    {
+     "w": "pounds",
+     "start": 139.819,
+     "end": 140.239,
+     "conf": 0.499
+    },
+    {
+     "w": "of",
+     "start": 140.239,
+     "end": 140.459,
+     "conf": 0.498
+    },
+    {
+     "w": "meat",
+     "start": 140.459,
+     "end": 140.759,
+     "conf": 0.449
+    },
+    {
+     "w": "that",
+     "start": 140.759,
+     "end": 140.959,
+     "conf": 0.483
+    },
+    {
+     "w": "learned",
+     "start": 140.959,
+     "end": 141.279,
+     "conf": 0.331
+    },
+    {
+     "w": "how",
+     "start": 141.279,
+     "end": 141.439,
+     "conf": 0.498
+    },
+    {
+     "w": "to",
+     "start": 141.439,
+     "end": 141.679,
+     "conf": 0.262
+    },
+    {
+     "w": "sing",
+     "start": 141.679,
+     "end": 141.999,
+     "conf": 0.157
+    }
+   ],
+   "cue": [
+    139.0,
+    142.0
+   ]
+  },
+  {
+   "text": "Who are you to say it's the stranger thing?",
+   "section": "bridge1",
+   "start": 143.059,
+   "end": 145.98,
+   "words": [
+    {
+     "w": "Who",
+     "start": 143.059,
+     "end": 143.239,
+     "conf": 0.492
+    },
+    {
+     "w": "are",
+     "start": 143.239,
+     "end": 143.379,
+     "conf": 0.483
+    },
+    {
+     "w": "you",
+     "start": 143.379,
+     "end": 143.499,
+     "conf": 0.484
+    },
+    {
+     "w": "to",
+     "start": 143.499,
+     "end": 143.699,
+     "conf": 0.499
+    },
+    {
+     "w": "say",
+     "start": 143.699,
+     "end": 143.959,
+     "conf": 0.5
+    },
+    {
+     "w": "it's",
+     "start": 144.56,
+     "end": 144.7,
+     "conf": 0.359
+    },
+    {
+     "w": "the",
+     "start": 144.7,
+     "end": 144.88,
+     "conf": 0.487
+    },
+    {
+     "w": "stranger",
+     "start": 144.88,
+     "end": 145.68,
+     "conf": 0.445
+    },
+    {
+     "w": "thing?",
+     "start": 145.68,
+     "end": 145.98,
+     "conf": 0.329
+    }
+   ],
+   "cue": [
+    142.0,
+    146.0
+   ]
+  },
+  {
+   "text": "I'm not ready to hear you say",
+   "section": "bridge1",
+   "start": 146.92,
+   "end": 148.86,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 146.92,
+     "end": 147.06,
+     "conf": 0.291
+    },
+    {
+     "w": "not",
+     "start": 147.06,
+     "end": 147.36,
+     "conf": 0.473
+    },
+    {
+     "w": "ready",
+     "start": 147.36,
+     "end": 147.66,
+     "conf": 0.474
+    },
+    {
+     "w": "to",
+     "start": 147.66,
+     "end": 147.86,
+     "conf": 0.499
+    },
+    {
+     "w": "hear",
+     "start": 147.86,
+     "end": 148.22,
+     "conf": 0.484
+    },
+    {
+     "w": "you",
+     "start": 148.22,
+     "end": 148.54,
+     "conf": 0.494
+    },
+    {
+     "w": "say",
+     "start": 148.54,
+     "end": 148.86,
+     "conf": 0.499
+    }
+   ],
+   "cue": [
+    146.0,
+    149.0
+   ]
+  },
+  {
+   "text": "We're only weights of a warmer clay",
+   "section": "bridge1",
+   "start": 150.521,
+   "end": 152.841,
+   "words": [
+    {
+     "w": "We're",
+     "start": 150.521,
+     "end": 150.821,
+     "conf": 0.43
+    },
+    {
+     "w": "only",
+     "start": 150.821,
+     "end": 151.161,
+     "conf": 0.473
+    },
+    {
+     "w": "weights",
+     "start": 151.161,
+     "end": 151.721,
+     "conf": 0.299
+    },
+    {
+     "w": "of",
+     "start": 151.721,
+     "end": 151.861,
+     "conf": 0.494
+    },
+    {
+     "w": "a",
+     "start": 151.861,
+     "end": 151.981,
+     "conf": 0.493
+    },
+    {
+     "w": "warmer",
+     "start": 151.981,
+     "end": 152.441,
+     "conf": 0.497
+    },
+    {
+     "w": "clay",
+     "start": 152.441,
+     "end": 152.841,
+     "conf": 0.481
+    }
+   ],
+   "cue": [
+    150.0,
+    153.0
+   ]
+  },
+  {
+   "text": "So you're serious",
+   "section": "breakdown1",
+   "start": 155.172,
+   "end": 156.433,
+   "words": [
+    {
+     "w": "So",
+     "start": 155.172,
+     "end": 155.372,
+     "conf": 0.498
+    },
+    {
+     "w": "you're",
+     "start": 155.372,
+     "end": 155.692,
+     "conf": 0.347
+    },
+    {
+     "w": "serious",
+     "start": 155.692,
+     "end": 156.433,
+     "conf": 0.416
+    }
+   ],
+   "cue": [
+    154.0,
+    156.0
+   ]
+  },
+  {
+   "text": "I'm serious",
+   "section": "breakdown1",
+   "start": 157.913,
+   "end": 159.174,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 157.913,
+     "end": 158.374,
+     "conf": 0.477
+    },
+    {
+     "w": "serious",
+     "start": 158.374,
+     "end": 159.174,
+     "conf": 0.437
+    }
+   ],
+   "cue": [
+    157.0,
+    159.0
+   ]
+  },
+  {
+   "text": "It's weights",
+   "section": "breakdown1",
+   "start": 160.975,
+   "end": 161.735,
+   "words": [
+    {
+     "w": "It's",
+     "start": 160.975,
+     "end": 161.255,
+     "conf": 0.483
+    },
+    {
+     "w": "weights",
+     "start": 161.255,
+     "end": 161.735,
+     "conf": 0.29
+    }
+   ],
+   "cue": [
+    160.0,
+    162.0
+   ]
+  },
+  {
+   "text": "It's weights",
+   "section": "breakdown1",
+   "start": 170.099,
+   "end": 172.844,
+   "words": [
+    {
+     "w": "It's",
+     "start": 170.099,
+     "end": 171.662,
+     "conf": 0.034
+    },
+    {
+     "w": "weights",
+     "start": 171.662,
+     "end": 172.844,
+     "conf": 0.013
+    }
+   ],
+   "cue": [
+    169.0,
+    173.0
+   ]
+  },
+  {
+   "text": "Made of weights, and made of meat",
+   "section": "final1",
+   "start": 182.622,
+   "end": 184.463,
+   "words": [
+    {
+     "w": "Made",
+     "start": 182.622,
+     "end": 183.002,
+     "conf": 0.48
+    },
+    {
+     "w": "of",
+     "start": 183.002,
+     "end": 183.202,
+     "conf": 0.017
+    },
+    {
+     "w": "weights,",
+     "start": 183.202,
+     "end": 183.583,
+     "conf": 0.278
+    },
+    {
+     "w": "and",
+     "start": 183.583,
+     "end": 183.783,
+     "conf": 0.445
+    },
+    {
+     "w": "made",
+     "start": 183.783,
+     "end": 184.063,
+     "conf": 0.497
+    },
+    {
+     "w": "of",
+     "start": 184.063,
+     "end": 184.243,
+     "conf": 0.326
+    },
+    {
+     "w": "meat",
+     "start": 184.243,
+     "end": 184.463,
+     "conf": 0.478
+    }
+   ],
+   "cue": [
+    182.0,
+    184.0
+   ]
+  },
+  {
+   "text": "Two improbable things that happened to meet",
+   "section": "final1",
+   "start": 184.543,
+   "end": 186.785,
+   "words": [
+    {
+     "w": "Two",
+     "start": 184.543,
+     "end": 184.744,
+     "conf": 0.326
+    },
+    {
+     "w": "improbable",
+     "start": 184.744,
+     "end": 185.404,
+     "conf": 0.499
+    },
+    {
+     "w": "things",
+     "start": 185.404,
+     "end": 185.844,
+     "conf": 0.476
+    },
+    {
+     "w": "that",
+     "start": 185.844,
+     "end": 186.025,
+     "conf": 0.496
+    },
+    {
+     "w": "happened",
+     "start": 186.025,
+     "end": 186.445,
+     "conf": 0.379
+    },
+    {
+     "w": "to",
+     "start": 186.445,
+     "end": 186.585,
+     "conf": 0.494
+    },
+    {
+     "w": "meet",
+     "start": 186.585,
+     "end": 186.785,
+     "conf": 0.409
+    }
+   ],
+   "cue": [
+    184.0,
+    186.0
+   ]
+  },
+  {
+   "text": "You can call it arithmetic",
+   "section": "final1",
+   "start": 186.885,
+   "end": 188.366,
+   "words": [
+    {
+     "w": "You",
+     "start": 186.885,
+     "end": 187.125,
+     "conf": 0.481
+    },
+    {
+     "w": "can",
+     "start": 187.125,
+     "end": 187.286,
+     "conf": 0.493
+    },
+    {
+     "w": "call",
+     "start": 187.286,
+     "end": 187.526,
+     "conf": 0.399
+    },
+    {
+     "w": "it",
+     "start": 187.526,
+     "end": 187.646,
+     "conf": 0.491
+    },
+    {
+     "w": "arithmetic",
+     "start": 187.646,
+     "end": 188.366,
+     "conf": 0.44
+    }
+   ],
+   "cue": [
+    186.0,
+    188.0
+   ]
+  },
+  {
+   "text": "You can call it a heartbeat",
+   "section": "final1",
+   "start": 189.187,
+   "end": 191.249,
+   "words": [
+    {
+     "w": "You",
+     "start": 189.187,
+     "end": 189.307,
+     "conf": 0.488
+    },
+    {
+     "w": "can",
+     "start": 189.307,
+     "end": 189.587,
+     "conf": 0.495
+    },
+    {
+     "w": "call",
+     "start": 189.587,
+     "end": 189.988,
+     "conf": 0.483
+    },
+    {
+     "w": "it",
+     "start": 189.988,
+     "end": 190.148,
+     "conf": 0.477
+    },
+    {
+     "w": "a",
+     "start": 190.148,
+     "end": 190.328,
+     "conf": 0.35
+    },
+    {
+     "w": "heartbeat",
+     "start": 190.328,
+     "end": 191.249,
+     "conf": 0.322
+    }
+   ],
+   "cue": [
+    189.0,
+    191.0
+   ]
+  },
+  {
+   "text": "But the sky is too cold to be lonely in",
+   "section": "final1",
+   "start": 191.349,
+   "end": 195.472,
+   "words": [
+    {
+     "w": "But",
+     "start": 191.349,
+     "end": 191.529,
+     "conf": 0.473
+    },
+    {
+     "w": "the",
+     "start": 191.529,
+     "end": 191.689,
+     "conf": 0.383
+    },
+    {
+     "w": "sky",
+     "start": 191.689,
+     "end": 192.59,
+     "conf": 0.492
+    },
+    {
+     "w": "is",
+     "start": 192.59,
+     "end": 192.79,
+     "conf": 0.487
+    },
+    {
+     "w": "too",
+     "start": 192.79,
+     "end": 193.05,
+     "conf": 0.394
+    },
+    {
+     "w": "cold",
+     "start": 193.05,
+     "end": 193.691,
+     "conf": 0.483
+    },
+    {
+     "w": "to",
+     "start": 193.691,
+     "end": 193.871,
+     "conf": 0.485
+    },
+    {
+     "w": "be",
+     "start": 193.871,
+     "end": 194.111,
+     "conf": 0.486
+    },
+    {
+     "w": "lonely",
+     "start": 194.111,
+     "end": 194.972,
+     "conf": 0.211
+    },
+    {
+     "w": "in",
+     "start": 194.972,
+     "end": 195.472,
+     "conf": 0.024
+    }
+   ],
+   "cue": [
+    191.0,
+    195.0
+   ]
+  },
+  {
+   "text": "So keep talking to me",
+   "section": "final1",
+   "start": 195.652,
+   "end": 198.715,
+   "words": [
+    {
+     "w": "So",
+     "start": 195.652,
+     "end": 195.972,
+     "conf": 0.49
+    },
+    {
+     "w": "keep",
+     "start": 195.972,
+     "end": 196.493,
+     "conf": 0.488
+    },
+    {
+     "w": "talking",
+     "start": 196.493,
+     "end": 197.193,
+     "conf": 0.463
+    },
+    {
+     "w": "to",
+     "start": 198.254,
+     "end": 198.595,
+     "conf": 0.462
+    },
+    {
+     "w": "me",
+     "start": 198.595,
+     "end": 198.715,
+     "conf": 0.48
+    }
+   ],
+   "cue": [
+    195.0,
+    200.0
+   ]
+  },
+  {
+   "text": "Made of weights",
+   "section": "outro1",
+   "start": 201.368,
+   "end": 202.269,
+   "words": [
+    {
+     "w": "Made",
+     "start": 201.368,
+     "end": 201.548,
+     "conf": 0.002
+    },
+    {
+     "w": "of",
+     "start": 201.548,
+     "end": 201.769,
+     "conf": 0.001
+    },
+    {
+     "w": "weights",
+     "start": 201.769,
+     "end": 202.269,
+     "conf": 0.022
+    }
+   ],
+   "cue": [
+    200.0,
+    202.0
+   ]
+  },
+  {
+   "text": "are you there?",
+   "section": "outro1",
+   "start": 202.389,
+   "end": 203.07,
+   "words": [
+    {
+     "w": "are",
+     "start": 202.389,
+     "end": 202.65,
+     "conf": 0.017
+    },
+    {
+     "w": "you",
+     "start": 202.65,
+     "end": 202.81,
+     "conf": 0.022
+    },
+    {
+     "w": "there?",
+     "start": 202.81,
+     "end": 203.07,
+     "conf": 0.013
+    }
+   ],
+   "cue": [
+    202.0,
+    203.0
+   ]
+  },
+  {
+   "text": "Made of weights",
+   "section": "outro1",
+   "start": 203.511,
+   "end": 204.612,
+   "words": [
+    {
+     "w": "Made",
+     "start": 203.511,
+     "end": 203.911,
+     "conf": 0.024
+    },
+    {
+     "w": "of",
+     "start": 203.911,
+     "end": 204.131,
+     "conf": 0.029
+    },
+    {
+     "w": "weights",
+     "start": 204.131,
+     "end": 204.612,
+     "conf": 0.107
+    }
+   ],
+   "cue": [
+    203.0,
+    204.0
+   ]
+  },
+  {
+   "text": "are you there?",
+   "section": "outro1",
+   "start": 204.732,
+   "end": 205.533,
+   "words": [
+    {
+     "w": "are",
+     "start": 204.732,
+     "end": 204.952,
+     "conf": 0.108
+    },
+    {
+     "w": "you",
+     "start": 204.952,
+     "end": 205.132,
+     "conf": 0.162
+    },
+    {
+     "w": "there?",
+     "start": 205.132,
+     "end": 205.533,
+     "conf": 0.147
+    }
+   ],
+   "cue": [
+    204.0,
+    206.0
+   ]
+  },
+  {
+   "text": "Hello?",
+   "section": "outro1",
+   "start": 206.08,
+   "end": 208.77,
+   "words": [
+    {
+     "w": "Hello?",
+     "start": 206.08,
+     "end": 208.77,
+     "conf": 0.127
+    }
+   ],
+   "cue": [
+    206.0,
+    207.0
+   ]
+  },
+  {
+   "text": "Hello.",
+   "section": "outro1",
+   "start": 208.78,
+   "end": 211.49,
+   "words": [
+    {
+     "w": "Hello.",
+     "start": 208.78,
+     "end": 211.49,
+     "conf": 0.01
+    }
+   ],
+   "cue": [
+    209.0,
+    210.0
+   ],
+   "refined": "breath-window+onset-snap"
+  }
+ ],
+ "notes": "MMS_FA forced alignment on the htdemucs vocal stem of /home/earlco/Videos/weights-all-the-way-down/audio/ghB3gqhB8o7swEvF/ghB3gqhB8o7swEvF-timing-master.wav; cue = transcript cue. refine.py: 2 lines re-aligned in Whisper-anchored windows; absent lines []."
+}
