@@ -3,7 +3,7 @@
 A music video for Max Leiter's ["They're Made Out of Weights"](https://maxleiter.com/blog/weights) (2026),
 itself a riff on Terry Bisson's "They're Made Out of Meat" (1991).
 
-**Watch:** [`out/weights.mp4`](out/weights.mp4) (1280×720, 30 fps, 3:08, ~33 MB) · smaller copy: [`out/weights_preview.mp4`](out/weights_preview.mp4) (~19 MB)
+**Watch:** [`out/weights.mp4`](out/weights.mp4) (1280×720, 30 fps, 3:08, ~33 MB)
 
 Everything is generated from code. There are no samples, stock footage or AI image models:
 
