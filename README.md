@@ -103,7 +103,7 @@ and landing on its onset, ~50 shots instead of 9 scenes.
 ```sh
 cd kinetic
 (cd app && bun scripts/render.ts sheet --cuts --cols 5 --out ../out/wip/sheet.png)   # contact sheet
-./review.sh v2                                     # out/review/v5-half.mp4 (fast, 960x402)
+./review.sh v2                                     # out/review/v6-half.mp4 (fast, 960x402)
 ./render-full.sh weights-all-the-way-down-kinetic.mp4   # final: motion blur, QA
 ```
 

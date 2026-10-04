@@ -23,7 +23,7 @@ function handBones() {
   for (let i = 0; i < 160; i++) out.push({ x: (r() - 0.5) * 120, y: 100 + (r() - 0.5) * 50, z: 0, k: 1, h: r() });
   const fingers: [number, number, number][] = [[-95, 40, -0.55], [-45, -10, -0.15], [5, -20, 0.02], [55, -10, 0.17], [100, 20, 0.36]];
   fingers.forEach(([bx, by, ang], fi) => {
-    const L = fi === 0 ? [62, 44, 34] : fi === 2 ? [110, 70, 50, 38] : [100, 62, 44, 34];
+    const L = fi === 0 ? [62, 44, 34] : fi === 2 ? [110, 70, 50, 38] : fi === 4 ? [78, 44, 30, 22] : [100, 62, 44, 34];
     let x = fi === 0 ? -60 : bx * 0.5, y = 80;
     const segs = L;
     let a = ang - Math.PI / 2;
@@ -53,7 +53,7 @@ function xray(s: S) {
   c.save(); c.translate(cx, cy); c.globalAlpha = 0.55 * flesh;
   c.fillStyle = hx('#7E9298', 1); c.beginPath(); c.ellipse(0, 40, 130, 120, 0, 0, TAU); c.fill();
   c.fillRect(-70, 120, 140, 260);
-  for (const [fx, ang, L] of [[-110, -0.55, 130], [-45, -0.15, 230], [5, 0.02, 260], [55, 0.17, 235], [100, 0.36, 180]] as const) { c.save(); c.translate(fx * 0.6, -10); c.rotate(ang); c.beginPath(); c.roundRect(-22, -L, 44, L + 30, 22); c.fill(); c.restore(); }
+  for (const [fx, ang, L] of [[-110, -0.55, 130], [-45, -0.15, 230], [5, 0.02, 260], [55, 0.17, 235], [100, 0.36, 140]] as const) { c.save(); c.translate(fx * 0.6, -10); c.rotate(ang); c.beginPath(); c.roundRect(-22, -L, 44, L + 30, 22); c.fill(); c.restore(); }
   c.restore();
   // the bones as points
   const P = handBones(), bk = 0.35 + 0.65 * (1 - flesh);

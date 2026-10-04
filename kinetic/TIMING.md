@@ -16,6 +16,14 @@ within ~0.3 s: Made of weights 59.0, made of weights 60.1, Zero 61.2, Made 63.0,
 
 Instrumental shots on this take's downbeats: title 4.90, club 174.54, sign build 179.19, end card 211.73.
 
+## Voice edits (delivered audio)
+`../audio/ghB3gqhB8o7swEvF/ghB3gqhB8o7swEvF-master-voice-edit.wav` (+ `.edits.json`) is the master the video uses
+(`analysis/work/MASTER`, `audio/master.m4a`). Made by `analysis/tools/voice_edits.py` on the vocal stem; outside the two
+windows it is bit-identical to the timing master, so all timing still applies:
+- 157.80–159.40 s, the second "I'm serious": Suno sang the male reply in the female voice (251 Hz). Down 18 semitones to
+  ~80–90 Hz, the Analyst's low spoken register (measured over his verse and bridge lines), formants lowered 4 semitones.
+- 208.75–210.05 s, the final "Hello.": 70% channel vocoder (98 Hz sawtooth carrier) / 30% voice, +4 dB.
+
 ## Previous take: 5as1fTyRJyE1c2rA (232.84 s)
 `../suno-5as1fTyRJyE1c2rA-timing-master.wav`, cache `analysis/candidates/8c85ebef015b-*` (pins for lines 13–31). It
 sings a different structure; switch back with `./swap-audio.sh ../suno-5as1fTyRJyE1c2rA-timing-master.wav`, but the

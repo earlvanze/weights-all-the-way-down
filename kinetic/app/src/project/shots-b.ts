@@ -306,9 +306,11 @@ function drawer(s: S) {
     const y = top + 10 + i * dh, ext = i === 0 ? out : 0;
     const sc = 1 + ext * 0.2, dy = ext * 70;
     const x0 = cx - (wd - 30) * sc / 2, w0 = (wd - 30) * sc;
-    if (ext > 0) { // the drawer box with cards
-      c.fillStyle = grey(0.1); c.fillRect(x0, y + dy - 60 * ext, w0, 60 * ext);
-      for (let k = 0; k < 14; k++) { c.fillStyle = grey(0.75 - 0.03 * (k % 3)); c.fillRect(x0 + 20 + k * (w0 - 40) / 14, y + dy - 60 * ext - 14 - (k % 4 === 1 ? 10 : 0), (w0 - 40) / 14 - 4, 40); }
+    if (ext > 0.01) { // the drawer box and its index cards ride with the front (fixed to it), fading in as it clears the cabinet
+      c.save(); c.globalAlpha = clamp(ext * 1.5);
+      c.fillStyle = grey(0.1); c.fillRect(x0 + 10 * sc, y + dy - 44 * sc, w0 - 20 * sc, 44 * sc);
+      for (let k = 0; k < 14; k++) { c.fillStyle = grey(0.75 - 0.03 * (k % 3)); c.fillRect(x0 + 20 * sc + k * (w0 - 40 * sc) / 14, y + dy - (40 + (k % 4 === 1 ? 10 : 0)) * sc, (w0 - 40 * sc) / 14 - 4, 40 * sc); }
+      c.restore();
     }
     c.fillStyle = grey(0.36 + 0.1 * ext); c.fillRect(x0, y + dy, w0, dh - 16);
     c.fillStyle = grey(0.7); c.fillRect(cx - 70 * sc, y + dy + 30, 140 * sc, 44);
