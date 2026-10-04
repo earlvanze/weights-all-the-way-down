@@ -51,6 +51,39 @@ using the same visual language. Run `.venv/bin/python src/render_made_of_weights
   - **Final chorus:** a heatmap split between meat and weights, and stars for "the sky is too cold".
   - **Outro:** two beacons trade "Hello?" / "Hello.".
 
+## Weights All the Way Down (noir jazz remix)
+
+A neo-noir video for the noir jazz remix: the timing master `suno-5as1fTyRJyE1c2rA-timing-master.wav`.
+The world is black and white, and only light has colour: neon reds and magentas, teal spill through
+venetian blinds, amber lamps, a cyan CRT and red evidence string. It's framed in a 2.39:1 letterbox
+with film grain, gate weave and flicker.
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # numpy, Pillow (+ ffmpeg on PATH)
+.venv/bin/python src/noir.py --stills 9,45,130   # preview frames -> out/stills/
+.venv/bin/python src/noir.py                     # -> out/weights-all-the-way-down-noir.mp4
+```
+
+- **Audio-driven:** `src/audio_features.py` beat-tracks the track (about 102.65 BPM swing, with a
+  dynamic-programming tracker and downbeats) and extracts kick, hi-hat and level envelopes. The
+  swinging bulb, the lamp posts on the street, the red string and the club spotlights all move on
+  those beats.
+- **Scenes:** each one changes on a downbeat near a structural boundary measured from the audio:
+  - **0:00** a rainy skyline with a red "WEIGHTS" sign, and the title
+  - **0:17** the detective's office
+  - **0:42** the suspect under a swinging bulb
+  - **0:56** a rain-slick street
+  - **1:29** the evidence board
+  - **2:01** the jazz club
+  - **2:34** interrogation under a red bulb
+  - **2:53** the rooftop "MADE OF WEIGHTS" sign
+  - **3:37** reflections in a rainy window, then THE END
+- **Words:** lines from the song (same lyrics as `suno/made-of-weights.md`) staged as noir intertitle
+  cards, a few per scene in song order. They're placed by scene and not synced to the vocal.
+  Retime them in `cards_for()`.
+- **Render time:** about 8 minutes on 4 cores. With the grain, the output is large (~180 MB at
+  CRF 23). Raise `-crf` in `render_segment()` for a smaller file.
+
 ## Structure (original procedural version)
 
 | time | section | |

@@ -10,3 +10,6 @@ out/mow_seg_*.mp4
 out/mow_segments.txt
 
 .venv/
+out/noir_seg_*.mp4
+out/noir_segments.txt
+out/weights-all-the-way-down-noir*.mp4
