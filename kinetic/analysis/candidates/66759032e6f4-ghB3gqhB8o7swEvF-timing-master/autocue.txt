@@ -1,0 +1,1 @@
+autocue: 72 lines, whisper words 391, weakly matched lines (<50% words): 0

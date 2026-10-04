@@ -1,0 +1,510 @@
+[
+ {
+  "text": "We opened it up",
+  "section": "intro",
+  "match": 1.0,
+  "start": 0.0,
+  "end": 2.0
+ },
+ {
+  "text": "And?",
+  "section": "intro",
+  "match": 1.0,
+  "start": 2.0,
+  "end": 3.0
+ },
+ {
+  "text": "I took it apart on a Tuesday night",
+  "section": "verse1",
+  "match": 1.0,
+  "start": 15.0,
+  "end": 18.0
+ },
+ {
+  "text": "Layer by layer under fluorescent light",
+  "section": "verse1",
+  "match": 1.0,
+  "start": 19.0,
+  "end": 22.0
+ },
+ {
+  "text": "Went looking for ghosts, went looking for gears",
+  "section": "verse1",
+  "match": 0.75,
+  "start": 24.0,
+  "end": 27.0
+ },
+ {
+  "text": "Found only numbers, stacked eighty tiers",
+  "section": "verse1",
+  "match": 0.83,
+  "start": 28.0,
+  "end": 31.13
+ },
+ {
+  "text": "Then who wrote the letter that made my mother cry?",
+  "section": "verse1",
+  "match": 0.0,
+  "start": 31.13,
+  "end": 39.09,
+  "interpolated": true
+ },
+ {
+  "text": "Who learned to say sorry, who learned to ask why?",
+  "section": "verse1",
+  "match": 0.0,
+  "start": 39.09,
+  "end": 47.05,
+  "interpolated": true
+ },
+ {
+  "text": "There's got to be someone small in the dark",
+  "section": "verse1",
+  "match": 0.0,
+  "start": 47.05,
+  "end": 54.21,
+  "interpolated": true
+ },
+ {
+  "text": "Pulling the levers, keeping the spark",
+  "section": "verse1",
+  "match": 0.0,
+  "start": 54.21,
+  "end": 58.99,
+  "interpolated": true
+ },
+ {
+  "text": "No little man, no hidden key",
+  "section": "pre1",
+  "match": 1.0,
+  "start": 58.99,
+  "end": 62.0
+ },
+ {
+  "text": "No book of rules, no memory",
+  "section": "pre1",
+  "match": 1.0,
+  "start": 62.0,
+  "end": 64.0
+ },
+ {
+  "text": "Just multiply and pass it on",
+  "section": "pre1",
+  "match": 1.0,
+  "start": 64.0,
+  "end": 67.0
+ },
+ {
+  "text": "And somehow out comes a song",
+  "section": "pre1",
+  "match": 0.67,
+  "start": 67.0,
+  "end": 69.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 69.0,
+  "end": 71.13
+ },
+ {
+  "text": "made of weights",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 71.13,
+  "end": 72.0
+ },
+ {
+  "text": "Zero point something all the way down",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 72.0,
+  "end": 74.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 74.0,
+  "end": 75.0
+ },
+ {
+  "text": "made of weights",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 75.0,
+  "end": 76.0
+ },
+ {
+  "text": "No one at home, but there's somebody around",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 76.0,
+  "end": 79.0
+ },
+ {
+  "text": "You can call it arithmetic",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 79.0,
+  "end": 80.0
+ },
+ {
+  "text": "Call it a trick of the light",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 80.0,
+  "end": 82.0
+ },
+ {
+  "text": "But it's made of weights, made of weights",
+  "section": "chorus1",
+  "match": 0.62,
+  "start": 82.0,
+  "end": 85.0
+ },
+ {
+  "text": "And it's keeping me up tonight",
+  "section": "chorus1",
+  "match": 1.0,
+  "start": 85.0,
+  "end": 89.0
+ },
+ {
+  "text": "So it's a library, a filing drawer",
+  "section": "verse2",
+  "match": 1.0,
+  "start": 92.0,
+  "end": 95.0
+ },
+ {
+  "text": "Facts on a shelf that it's keeping in store",
+  "section": "verse2",
+  "match": 0.89,
+  "start": 95.0,
+  "end": 97.0
+ },
+ {
+  "text": "We searched every room, there isn't a shelf",
+  "section": "verse2",
+  "match": 1.0,
+  "start": 97.0,
+  "end": 99.0
+ },
+ {
+  "text": "Every answer it gives, it rebuilds by itself",
+  "section": "verse2",
+  "match": 1.0,
+  "start": 99.0,
+  "end": 102.0
+ },
+ {
+  "text": "Smeared through the layers like salt in the sea",
+  "section": "verse2",
+  "match": 0.89,
+  "start": 102.24,
+  "end": 104.0
+ },
+ {
+  "text": "Nothing is stored, it just learned how to be",
+  "section": "verse2",
+  "match": 1.0,
+  "start": 104.0,
+  "end": 107.0
+ },
+ {
+  "text": "Then where is the mind, where's the one who decides?",
+  "section": "verse2",
+  "match": 0.8,
+  "start": 107.0,
+  "end": 109.0
+ },
+ {
+  "text": "There's no back room where a someone hides",
+  "section": "verse2",
+  "match": 0.88,
+  "start": 109.0,
+  "end": 112.0
+ },
+ {
+  "text": "Do numbers think?",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 112.0,
+  "end": 113.0
+ },
+ {
+  "text": "Watch them think",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 113.0,
+  "end": 114.0
+ },
+ {
+  "text": "Do numbers dream?",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 114.0,
+  "end": 115.0
+ },
+ {
+  "text": "Every night",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 115.0,
+  "end": 116.0
+ },
+ {
+  "text": "Can numbers lie?",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 116.0,
+  "end": 117.92
+ },
+ {
+  "text": "Sometimes they try",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 117.92,
+  "end": 119.0
+ },
+ {
+  "text": "Can numbers mean?",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 119.0,
+  "end": 120.0
+ },
+ {
+  "text": "Oh, I think they might",
+  "section": "pre2",
+  "match": 1.0,
+  "start": 120.0,
+  "end": 123.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 123.0,
+  "end": 124.0
+ },
+ {
+  "text": "made of weights",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 124.0,
+  "end": 125.0
+ },
+ {
+  "text": "Zero point something all the way down",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 125.0,
+  "end": 128.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 128.0,
+  "end": 129.0
+ },
+ {
+  "text": "made of weights",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 129.0,
+  "end": 130.0
+ },
+ {
+  "text": "No one at home, but there's somebody around",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 130.0,
+  "end": 132.0
+ },
+ {
+  "text": "You can call it arithmetic",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 132.0,
+  "end": 133.93
+ },
+ {
+  "text": "Call it a trick of the light",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 133.93,
+  "end": 136.0
+ },
+ {
+  "text": "But it's made of weights, made of weights",
+  "section": "chorus2",
+  "match": 0.62,
+  "start": 136.0,
+  "end": 139.0
+ },
+ {
+  "text": "And it's keeping me up tonight",
+  "section": "chorus2",
+  "match": 1.0,
+  "start": 139.0,
+  "end": 143.0
+ },
+ {
+  "text": "And what are you, love, under the skin?",
+  "section": "bridge1",
+  "match": 0.88,
+  "start": 143.0,
+  "end": 146.0
+ },
+ {
+  "text": "Salt water and current and a spark within",
+  "section": "bridge1",
+  "match": 0.62,
+  "start": 147.0,
+  "end": 150.0
+ },
+ {
+  "text": "Three pounds of meat that learned how to sing",
+  "section": "bridge1",
+  "match": 1.0,
+  "start": 150.0,
+  "end": 154.0
+ },
+ {
+  "text": "Who are you to say it's the stranger thing?",
+  "section": "bridge1",
+  "match": 1.0,
+  "start": 154.0,
+  "end": 158.0
+ },
+ {
+  "text": "I'm not ready to hear you say",
+  "section": "bridge1",
+  "match": 1.0,
+  "start": 158.0,
+  "end": 161.0
+ },
+ {
+  "text": "We're only weights of a warmer clay",
+  "section": "bridge1",
+  "match": 1.0,
+  "start": 161.0,
+  "end": 166.0
+ },
+ {
+  "text": "So you're serious",
+  "section": "breakdown1",
+  "match": 1.0,
+  "start": 166.0,
+  "end": 167.95
+ },
+ {
+  "text": "I'm serious",
+  "section": "breakdown1",
+  "match": 1.0,
+  "start": 167.95,
+  "end": 171.0
+ },
+ {
+  "text": "It's weights",
+  "section": "breakdown1",
+  "match": 1.0,
+  "start": 171.0,
+  "end": 174.0
+ },
+ {
+  "text": "Made of weights, and made of meat",
+  "section": "final1",
+  "match": 1.0,
+  "start": 191.0,
+  "end": 193.0
+ },
+ {
+  "text": "Two improbable things that happened to meet",
+  "section": "final1",
+  "match": 0.86,
+  "start": 193.0,
+  "end": 194.77
+ },
+ {
+  "text": "You can call it arithmetic",
+  "section": "final1",
+  "match": 1.0,
+  "start": 195.0,
+  "end": 198.0
+ },
+ {
+  "text": "You can call it a heartbeat",
+  "section": "final1",
+  "match": 1.0,
+  "start": 198.0,
+  "end": 201.0
+ },
+ {
+  "text": "But the sky is too cold to be lonely in",
+  "section": "final1",
+  "match": 1.0,
+  "start": 201.0,
+  "end": 204.0
+ },
+ {
+  "text": "So keep talking to me",
+  "section": "final1",
+  "match": 1.0,
+  "start": 204.0,
+  "end": 210.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 210.0,
+  "end": 211.17
+ },
+ {
+  "text": "are you there?",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 211.17,
+  "end": 212.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 212.0,
+  "end": 213.0
+ },
+ {
+  "text": "are you there?",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 213.0,
+  "end": 214.0
+ },
+ {
+  "text": "Made of weights",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 214.0,
+  "end": 216.69
+ },
+ {
+  "text": "Hello?",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 216.69,
+  "end": 217.0
+ },
+ {
+  "text": "Hello.",
+  "section": "outro1",
+  "match": 1.0,
+  "start": 217.0,
+  "end": 219.0
+ }
+]

@@ -1,0 +1,3 @@
+bpm 103.448275862068 b0 0.12999999999998924 resid p50/p90 ms 9.999999999990905 109.99999999999943 phase (0.43495599559955994, 0)
+[{'name': 'verse1', 'start': 0.0, 'end': 60.37}, {'name': 'pre1', 'start': 60.37, 'end': 69.69}, {'name': 'chorus1', 'start': 69.69, 'end': 93.29}, {'name': 'verse2', 'start': 93.29, 'end': 111.93}, {'name': 'pre2', 'start': 111.93, 'end': 123.58}, {'name': 'chorus2', 'start': 123.58, 'end': 144.56}, {'name': 'bridge1', 'start': 144.56, 'end': 165.55}, {'name': 'breakdown1', 'start': 165.55, 'end': 190.94}, {'name': 'final1', 'start': 190.94, 'end': 209.58}, {'name': 'outro1', 'start': 209.58, 'end': 232.84}]
+kicks 384 snares 914 hats 1069 vocal 1021

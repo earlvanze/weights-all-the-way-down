@@ -10,6 +10,30 @@ out/mow_seg_*.mp4
 out/mow_segments.txt
 
 .venv/
-out/noir_seg_*.mp4
-out/noir_segments.txt
-out/weights-all-the-way-down-noir*.mp4
+noir/out/noir_seg_*.mp4
+noir/out/noir_segments.txt
+noir/out/noirremix_seg_*.mp4
+noir/out/noirremix_segments.txt
+noir/out/*.features.npz
+noir/out/stills/
+noir/out/*.log
+noir/__pycache__/
+
+# kinetic (1080p kinetic-typography version)
+kinetic/app/node_modules/
+kinetic/analysis/.venv/
+kinetic/analysis/work/
+kinetic/analysis/candidates/*/*.wav
+kinetic/out/wip/
+kinetic/out/review/*.log
+kinetic/out/final/*.segs/
+kinetic/qa/
+kinetic/analysis/candidates/*/master.m4a
+kinetic/out/review/v1-half.mp4
+audio/*/*-raw.wav
+kinetic/out/*.log
+kinetic/out/review/v2-half.mp4
+kinetic/out/review/v3-half.mp4
+kinetic/out/review/v4-half.mp4
+noir/out/weights-all-the-way-down-noir-remix*.mp4
+kinetic/out/final/*.mp4

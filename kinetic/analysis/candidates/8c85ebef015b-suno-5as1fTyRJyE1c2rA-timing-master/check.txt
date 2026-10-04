@@ -1,0 +1,10 @@
+suspect lines: 0
+0.983 1.746 We opened it up [('We', 0.983), ('opened', 1.164), ('it', 1.445), ('up', 1.585)]
+2.749 2.95 And? [('And?', 2.749)]
+15.884 17.644 I took it apart on a Tuesday night [('I', 15.884), ('took', 15.984), ('it', 16.164), ('apart', 16.264), ('on', 16.744), ('a', 16.844), ('Tuesday', 16.944), ('night', 17.384)]
+19.805 22.046 Layer by layer under fluorescent light [('Layer', 19.805), ('by', 20.125), ('layer', 20.365), ('under', 20.745), ('fluorescent', 21.085), ('light', 21.745)]
+24.226 26.687 Went looking for ghosts, went looking for gears [('Went', 24.226), ('looking', 24.426), ('for', 24.666), ('ghosts,', 24.866), ('went', 25.486), ('looking', 25.666), ('for', 25.927), ('gears', 26.127)]
+28.407 32.008 Found only numbers, stacked eighty tiers [('Found', 28.407), ('only', 28.707), ('numbers,', 28.947), ('stacked', 30.468), ('eighty', 31.148), ('tiers', 31.468)]
+41.671 45.832 Then who wrote the letter that made my mother cry? [('Then', 41.671), ('who', 42.031), ('wrote', 42.571), ('the', 42.891), ('letter', 43.051), ('that', 44.011), ('made', 44.311), ('my', 44.611), ('mother', 44.891), ('cry?', 45.251)]
+46.352 50.413 Who learned to say sorry, who learned to ask why? [('Who', 46.352), ('learned', 46.632), ('to', 47.232), ('say', 47.412), ('sorry,', 47.772), ('who', 48.692), ('learned', 48.952), ('to', 49.453), ('ask', 49.793), ('why?', 50.153)]
+vocal energy 0-16s (0.5s bins): [0.0, 0.0, 0.33, 0.13, 0.01, 0.31, 0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06, 0.08, 0.11, 0.17, 0.03, 0.01, 0.0, 0.0, 0.0, 0.12]

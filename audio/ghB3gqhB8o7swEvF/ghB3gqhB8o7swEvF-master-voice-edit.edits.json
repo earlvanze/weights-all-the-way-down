@@ -1,0 +1,19 @@
+{
+ "source_master": "ghB3gqhB8o7swEvF-timing-master.wav",
+ "vocal_stem": "htdemucs vocals (analysis cache)",
+ "edits": [
+  {
+   "name": "I'm serious (2nd)",
+   "start": 157.8,
+   "end": 159.4,
+   "kind": "male"
+  },
+  {
+   "name": "Hello. (final)",
+   "start": 208.75,
+   "end": 210.05,
+   "kind": "robot"
+  }
+ ],
+ "method": "Voice edits on the delivered mix, done on the demucs vocal stem so only the edited words change."
+}

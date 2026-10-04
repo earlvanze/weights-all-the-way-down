@@ -1,0 +1,31 @@
+{
+  "title": "Weights All the Way Down",
+  "artist": "earlco",
+  "share_url": "https://suno.com/s/5as1fTyRJyE1c2rA",
+  "captured_at": "2026-10-04T01:29:00+02:00",
+  "capture_method": "Authorized normal Suno playback in existing Brave CDP session, isolated PipeWire null-sink monitor, 48 kHz stereo 24-bit PCM WAV.",
+  "player_reported_duration_seconds": 232.84,
+  "raw_path": "/home/earlco/weights-music-video/suno-5as1fTyRJyE1c2rA-raw.wav",
+  "raw_sha256": "0e8b4ecb75e3df79c5dea5d26277cb95125e38d7fdc8c270166e6f4a9347b1af",
+  "timing_master_path": "/home/earlco/weights-music-video/suno-5as1fTyRJyE1c2rA-timing-master.wav",
+  "timing_master_sha256": "8c85ebef015b86cf4bbe19f4821f3201901fab323a076eb83dc4463541cef424",
+  "trim_start_seconds": 1.6,
+  "trim_duration_seconds": 232.84,
+  "trim_end_seconds": 1.6100000000000136,
+  "verification": {
+    "raw_duration_seconds": 236.05,
+    "timing_master_duration_seconds": 232.84,
+    "stream": "pcm_s24le, 48 kHz, stereo",
+    "boundary_check": "Raw capture has 1.600 s leading silence. Timing master starts at true playback onset and matches player-reported duration. PCM peak is below 0 dBFS (-1.48 dBFS left; -1.57 dBFS right)."
+  },
+  "raw_duration_seconds": 236.05,
+  "timing_master_duration_seconds": 232.84,
+  "timing": {
+    "player_reported_duration_seconds": 232.84,
+    "raw_duration_seconds": 236.05,
+    "trim_start_seconds": 1.6,
+    "trim_duration_seconds": 232.84,
+    "trim_end_seconds": 1.6100000000000136,
+    "timing_master_duration_seconds": 232.84
+  }
+}

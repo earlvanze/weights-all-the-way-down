@@ -1,0 +1,5 @@
+autocue: 72 lines, whisper words 361, weakly matched lines (<50% words): 4
+    (6, 'Then who wrote the letter that made my mother cry?', 0.0)
+    (7, 'Who learned to say sorry, who learned to ask why?', 0.0)
+    (8, "There's got to be someone small in the dark", 0.0)
+    (9, 'Pulling the levers, keeping the spark', 0.0)

@@ -3,7 +3,7 @@
 A music video for Max Leiter's ["They're Made Out of Weights"](https://maxleiter.com/blog/weights) (2026),
 itself a riff on Terry Bisson's "They're Made Out of Meat" (1991).
 
-**Watch:** [`out/weights.mp4`](out/weights.mp4) (1280×720, 30 fps, 3:08, ~33 MB) · smaller copy: [`out/weights_preview.mp4`](out/weights_preview.mp4) (~19 MB)
+**Watch:** [`out/weights.mp4`](out/weights.mp4) (1280×720, 30 fps, 3:08, ~33 MB)
 
 Everything is generated from code. There are no samples, stock footage or AI image models:
 
@@ -51,38 +51,34 @@ using the same visual language. Run `.venv/bin/python src/render_made_of_weights
   - **Final chorus:** a heatmap split between meat and weights, and stars for "the sky is too cold".
   - **Outro:** two beacons trade "Hello?" / "Hello.".
 
-## Weights All the Way Down (noir jazz remix)
+## Weights All the Way Down — noir (`noir/`)
 
-A neo-noir video for the noir jazz remix: the timing master `suno-5as1fTyRJyE1c2rA-timing-master.wav`.
-The world is black and white, and only light has colour: neon reds and magentas, teal spill through
-venetian blinds, amber lamps, a cyan CRT and red evidence string. It's framed in a 2.39:1 letterbox
-with film grain, gate weave and flicker.
+The neo-noir videos for the noir jazz remix live in [`noir/`](noir/README.md): the original renderer and preview
+(`noir/noir.py`, first capture) and the full-production remix with word-synced cards on the 2026-10-04 take
+(`noir/noir_remix.py` → `noir/out/weights-all-the-way-down-noir-remix.mp4`, 1920×804).
+
+## Weights All the Way Down — kinetic noir (1080p, `kinetic/`)
+
+A rebuild of the noir video on the [kinetic-typography template](../kinetic-template), delivered at native 2.39:1 (1920×804, each composition fit at 0.8 so nothing is cropped), every sung word timed
+and landing on its onset, ~50 shots instead of 9 scenes.
+
+- **Timing:** word-level, from the vocal stem (`kinetic/data/lyrics.json`). Evidence and pins are in
+  [`kinetic/TIMING.md`](kinetic/TIMING.md). The old renderer only placed cards per scene.
+- **Neon:** real tubes, not glowing type. Each stroke of a single-stroke font is a bent glass tube. Unlit it's pale glass
+  with a specular line; lit it has a saturated body, a white-hot core and a halo. It also has blacked-out jumps between
+  letters, electrode caps, standoff clips, a raceway box, an ignition stutter, faulty-transformer drop-outs and
+  wet-street reflections (`kinetic/app/src/project/noir.ts`).
+- **Point clouds:** the city, the 80-tier layer stack, the drop through planes of weights, the brain on the butcher's
+  scale, the bust that warms to clay, the jazz trio, the two spheres that meet, ANSWER→ITSELF, and SALT dissolving.
+- **Edit:** `kinetic/app/src/project/script.ts`. Shots are in `shots-a.ts` (intro, verse 1, pre 1), `shots-b.ts` (choruses,
+  verse 2, pre 2) and `shots-c.ts` (bridge → end).
 
 ```sh
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # numpy, Pillow (+ ffmpeg on PATH)
-.venv/bin/python src/noir.py --stills 9,45,130   # preview frames -> out/stills/
-.venv/bin/python src/noir.py                     # -> out/weights-all-the-way-down-noir.mp4
+cd kinetic
+(cd app && bun scripts/render.ts sheet --cuts --cols 5 --out ../out/wip/sheet.png)   # contact sheet
+./review.sh v2                                     # out/review/v6-half.mp4 (fast, 960x402)
+./render-full.sh weights-all-the-way-down-kinetic.mp4   # final: motion blur, QA
 ```
-
-- **Audio-driven:** `src/audio_features.py` beat-tracks the track (about 102.65 BPM swing, with a
-  dynamic-programming tracker and downbeats) and extracts kick, hi-hat and level envelopes. The
-  swinging bulb, the lamp posts on the street, the red string and the club spotlights all move on
-  those beats.
-- **Scenes:** each one changes on a downbeat near a structural boundary measured from the audio:
-  - **0:00** a rainy skyline with a red "WEIGHTS" sign, and the title
-  - **0:17** the detective's office
-  - **0:42** the suspect under a swinging bulb
-  - **0:56** a rain-slick street
-  - **1:29** the evidence board
-  - **2:01** the jazz club
-  - **2:34** interrogation under a red bulb
-  - **2:53** the rooftop "MADE OF WEIGHTS" sign
-  - **3:37** reflections in a rainy window, then THE END
-- **Words:** lines from the song (same lyrics as `suno/made-of-weights.md`) staged as noir intertitle
-  cards, a few per scene in song order. They're placed by scene and not synced to the vocal.
-  Retime them in `cards_for()`.
-- **Render time:** about 8 minutes on 4 cores. With the grain, the output is large (~180 MB at
-  CRF 23). Raise `-crf` in `render_segment()` for a smaller file.
 
 ## Structure (original procedural version)
 

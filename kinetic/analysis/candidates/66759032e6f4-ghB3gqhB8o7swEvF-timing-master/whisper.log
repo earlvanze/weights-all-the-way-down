@@ -1,0 +1,58 @@
+ggml_vulkan: Found 1 Vulkan devices:
+ggml_vulkan: 0 = AMD Radeon Graphics (RADV NAVI14) (radv) | uma: 0 | fp16: dot2 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 65536 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from /usr/lib/ggml/libggml-vulkan.so
+load_backend: loaded CPU backend from /usr/lib/ggml/libggml-cpu-haswell.so
+whisper_init_from_file_with_params_no_state: loading model from '/home/earlco/Videos/isn-wealth-wednesday-bill-predebon-2026-09-28/workflow/models/ggml-medium.en.bin'
+whisper_init_with_params_no_state: dtw_token_timestamps is not supported with flash_attn - disabling
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 2
+whisper_init_with_params_no_state: backends   = 2
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51864
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1024
+whisper_model_load: n_audio_head  = 16
+whisper_model_load: n_audio_layer = 24
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1024
+whisper_model_load: n_text_head   = 16
+whisper_model_load: n_text_layer  = 24
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 4 (medium)
+whisper_model_load: adding 1607 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:      Vulkan0 total size =  1533.14 MB
+whisper_model_load: model size    = 1533.14 MB
+whisper_backend_init_gpu: device 0: Vulkan0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: Vulkan0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using Vulkan0 backend
+whisper_init_state: kv self size  =   50.33 MB
+whisper_init_state: kv cross size =  150.99 MB
+whisper_init_state: kv pad  size  =    6.29 MB
+whisper_init_state: compute buffer (conv)   =   29.53 MB
+whisper_init_state: compute buffer (encode) =   44.60 MB
+whisper_init_state: compute buffer (cross)  =   38.45 MB
+whisper_init_state: compute buffer (decode) =   99.12 MB
+read_audio_data: reading audio data from 'work/vocals16.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 12 / 16 | WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'work/vocals16.wav' (3577600 samples, 223.6 sec), 12 threads, 1 processors, 5 beams + best of 5, lang = en, task = transcribe, timestamps = 1 ...
+
+output_json: saving output to '/home/earlco/Videos/weights-all-the-way-down/kinetic/analysis/candidates/66759032e6f4-ghB3gqhB8o7swEvF-timing-master/whisper-words.json'
+
+whisper_print_timings:     load time =  1012.22 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =   122.64 ms
+whisper_print_timings:   sample time =  1001.91 ms /  3207 runs (     0.31 ms per run)
+whisper_print_timings:   encode time =  3577.72 ms /     8 runs (   447.21 ms per run)
+whisper_print_timings:   decode time =   194.24 ms /    12 runs (    16.19 ms per run)
+whisper_print_timings:   batchd time = 13509.31 ms /  3156 runs (     4.28 ms per run)
+whisper_print_timings:   prompt time =   661.64 ms /  1294 runs (     0.51 ms per run)
+whisper_print_timings:    total time = 20376.34 ms
