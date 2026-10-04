@@ -130,7 +130,7 @@ function casefile(s: S) {
     c.restore();
   };
   sheet(-1); sheet(1);
-  deskCalendar(s, 1440, 640, l.words.slice(Math.max(0, tue.index - 3), tue.index), tue);
+  deskCalendar(s, 1640, 760, l.words.slice(Math.max(0, tue.index - 3), tue.index), tue);
   // the lamp goes night-blue on "night"
   pool(s.g, 1500, 300, 700, TEAL, 0.14 * prog(t, nig.start, nig.start + 0.4));
 }
@@ -145,7 +145,7 @@ function deskCalendar(s: S, x: number, y: number, before: Word[], tue: Word) {
   let idx = offs;
   for (const w of flips) if (t >= w.start - 0.03) idx++;
   const w0 = 300, h0 = 340;
-  c.save(); c.translate(x, y); c.rotate(0.06);
+  c.save(); c.translate(x, y); c.rotate(0.06); c.scale(0.78, 0.78);
   const pageAt = (k: number, a = 1) => {
     const [dn, dd] = pages[Math.min(k, 4)]!;
     const isTue = k >= 4, hk = isTue ? heat(tue, t) : 0;

@@ -1,7 +1,7 @@
 // Project shots for "Weights All the Way Down" (noir jazz remix). Every shot is wrapped in the noir finish: a silver
 // black-and-white world where only light has colour, film grain and gate weave, and the 2.39:1 letterbox.
-import { prog } from '../engine/util';
-import { H, W, hash, letterbox, type S } from './noir';
+import { H, W, clamp, hash, letterbox, prog, type S } from './noir';
+import { scaleContext2D } from '../engine/gl';
 import { A_SHOTS } from './shots-a';
 import { B_SHOTS } from './shots-b';
 import { C_SHOTS } from './shots-c';
@@ -15,12 +15,41 @@ function finish(fn: (s: S) => void) {
     s.post.exposure = 1 + 0.025 * Math.sin(t * 47) * Math.sin(t * 13);
     s.post.shake = [0.6 * Math.sin(t * 3.1), 1.1 * Math.sin(t * 5.3)];
     fn(s);
+    carryOver(s);
     filmDamage(s);
     if (!s.sh.o.noBox) letterbox(s, s.sh.o.box ?? 1);
     // fade from black at the very top of the film
     if (t < 0.9) s.post.fade = 1 - prog(t, 0, 0.9);
   };
 }
+/**
+ * When the previous shot's last word landed within 0.6 s of the cut (this take is fast), the previous shot dissolves out
+ * over the first 0.45 s instead of being cut away, so its last word is read.
+ */
+const OFF: { c?: CanvasRenderingContext2D; g?: CanvasRenderingContext2D } = {};
+function offCtx(like: CanvasRenderingContext2D) {
+  const cv = document.createElement('canvas'); cv.width = like.canvas.width; cv.height = like.canvas.height;
+  return scaleContext2D(cv.getContext('2d')!, like.canvas.width / W);
+}
+function carryOver(s: S) {
+  const shots = s.shots, sh = s.sh;
+  if (!shots || sh.idx < 1 || s.sh.o.noCarry) return;
+  const prev = shots[sh.idx - 1]!;
+  const lw = prev.lines.at(-1)?.words.at(-1);
+  if (!lw || sh.start - lw.start > 0.6) return;
+  const D = 0.45, k = prog(s.lt, 0, D);
+  if (k >= 1) return;
+  const fn = ALL[prev.kind]; if (!fn) return;
+  OFF.c ??= offCtx(s.c); OFF.g ??= offCtx(s.g);
+  for (const x of [OFF.c, OFF.g]) { x.setTransform(1, 0, 0, 1, 0, 0); x.globalAlpha = 1; x.globalCompositeOperation = 'source-over'; x.clearRect(0, 0, W, H); }
+  const s2: S = { ...s, c: OFF.c, g: OFF.g, sh: prev, lt: s.t - prev.start, post: { ...s.post } };
+  try { fn(s2); } catch { return; }
+  const a = clamp(1 - k * k * (3 - 2 * k));
+  for (const [dst, src] of [[s.c, OFF.c], [s.g, OFF.g]] as const) {
+    dst.save(); dst.setTransform(1, 0, 0, 1, 0, 0); dst.globalAlpha = a; dst.drawImage(src.canvas, 0, 0, W, H); dst.restore();
+  }
+}
+
 /** Print damage at 24 fps (the film's own frame rate, independent of the render rate): dust, hairs, emulsion scratches and
  *  a gate flicker. Deterministic per film frame. */
 function filmDamage(s: S) {

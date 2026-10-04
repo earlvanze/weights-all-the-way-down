@@ -333,7 +333,8 @@ export function drawCloud(s: S, P: P3[], cm: PCam, style: (p: P3, i: number, d: 
     if (!st) continue;
     const [fill, a, sz0, ga] = st;
     if (a <= 0.004) continue;
-    const sz = o.fixed ? sz0 : Math.max(0.8, sz0 * base * q.k);
+    const sz = o.fixed ? sz0 : Math.min(7, Math.max(0.8, sz0 * base * q.k));
+    if (!o.fixed && q.d < 160) continue;
     c.globalAlpha = clamp(a); c.fillStyle = fill; c.fillRect(q.x - sz / 2, q.y - sz / 2, sz, sz);
     if (ga > 0.01) { g.globalAlpha = clamp(ga); g.fillStyle = fill; g.fillRect(q.x - sz, q.y - sz, sz * 2, sz * 2); }
   }

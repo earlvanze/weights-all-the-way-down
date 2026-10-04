@@ -254,11 +254,12 @@ function reprise(s: S) {
   const pos1 = [[560, 430], [900, 430], [1300, 430]], pos2 = [[640, 760], [960, 760], [1300, 760]];
   const all = [...g1.map((w, i) => [w, pos1[Math.min(i, 2)]!] as const), ...g2.map((w, i) => [w, pos2[Math.min(i, 2)]!] as const)];
   const k = snapCam(t, [0, ...all.map(([w]) => w.start - 0.08)], [{ x: W / 2, y: H / 2, z: 1, r: 0 }, ...all.map(([, p], i) => ({ x: lerp(W / 2, p[0]!, 0.3), y: lerp(H / 2, p[1]! - 80, 0.4), z: 1.08, r: (i % 2 ? 1 : -1) * 0.02 }))], 0.32);
-  cam(s, k);
+  const fin = prog(t, lastW(l).end - 0.1, lastW(l).end + 0.4, ease.inOutCubic);
+  cam(s, { x: lerp(k.x, W / 2, fin), y: lerp(k.y, H / 2 + 60, fin), z: lerp(k.z, 0.98, fin), r: lerp(k.r, 0, fin) });
   lyric(s, ws.slice(0, m1.index), 250, { width: 500, max: 80, x: 420 });
   neonWords(s, g1, W / 2 + 20, 470, { font: 'readable', size: 200, color: n > 1 ? 'pink' : 'red', box: { pad: 40, a: 0.8 } });
   if (g2.length) neonWords(s, g2, W / 2 + 60, 800, { font: 'script', size: 200, color: 'teal', cased: true, seed: 17 });
-  else neon(s, 'all the way down', W / 2 + 60, 800, { font: 'script', size: 170, color: 'teal', lit: () => ignite(t, lastW(l).end + 0.1, 17, 0.05) });
+  else neon(s, 'all the way down', W / 2, 780, { font: 'script', size: 140, color: 'teal', lit: () => ignite(t, lastW(l).end + 0.1, 17, 0.05) });
   rain(s, 120, 0.1, 0.1, 21);
 }
 
@@ -316,7 +317,7 @@ function drawer(s: S) {
   sw(s, li, 'LIBRARY', A(125, 900), 150, W / 2, 320, { from: 1.5 });
   // A FILING DRAWER on the drawer's label holder
   const lab = l.words.slice(li.index + 1);
-  lyric(s, lab, 820, { width: 520, max: 80, x: 1480 });
+  lyric(s, lab, 820, { width: 380, max: 70, x: 1590 });
 }
 
 // FACTS ON A SHELF THAT IT'S KEEPING IN STORE — every word is a book spine dropped onto the shelf as it is sung.
@@ -432,7 +433,7 @@ function salt(s: S) {
     c.fillRect(x - 2, y - 2, 3.5, 3.5);
   }
   sw(s, se, 'SEA', A(125, 900), 180, 1480, 860, { from: 1.4, color: heat(se, t) > 0.05 ? undefined : hx(TEAL, 0.8) });
-  lyric(s, l.words.slice(sa.index + 1, se.index), 800, { width: 260, max: 60, x: 1220 });
+  lyric(s, l.words.slice(sa.index + 1, se.index), 730, { width: 220, max: 56, x: 1480 });
 }
 
 // NOTHING IS STORED, IT JUST LEARNED HOW TO BE — the vault door swings open on STORED: nothing inside; BE glows in the empty vault.
@@ -440,7 +441,7 @@ function vault(s: S) {
   const { t, c, g } = s;
   const l = ln(s), st = fw(l, /stored/i), be = lastW(l), no = l.words[0]!;
   backdrop(s, 0.05, 0.04);
-  cam(s, snapCam(t, [0, st.start - 0.1, be.start - 0.2], [{ x: W / 2, y: H / 2, z: 1, r: 0 }, { x: W / 2 + 80, y: H / 2, z: 1.08, r: 0 }, { x: W / 2 + 120, y: H / 2 + 10, z: 1.4, r: 0 }], 0.5));
+  cam(s, snapCam(t, [0, st.start - 0.1, be.start - 0.2], [{ x: W / 2, y: H / 2, z: 1, r: 0 }, { x: W / 2 + 80, y: H / 2, z: 1.08, r: 0 }, { x: W / 2 + 60, y: H / 2 + 10, z: 1.12, r: 0 }], 0.5));
   const cx = 1080, cy = 560, R = 300;
   // the empty interior
   c.fillStyle = grey(0.015); c.beginPath(); c.arc(cx, cy, R, 0, TAU); c.fill();
@@ -459,7 +460,7 @@ function vault(s: S) {
   sw(s, no, 'NOTHING', A(125, 900), 140, 470, 330, { from: 1.4 });
   lyric(s, l.words.slice(1, st.index), 430, { width: 200, max: 60, x: 470 });
   sw(s, st, 'STORED', A(100, 900), 110, 470, 540, { from: 1.4 });
-  lyric(s, l.words.slice(st.index + 1, be.index), 880, { width: 1100, max: 90, x: W / 2 });
+  lyric(s, l.words.slice(st.index + 1, be.index), 830, { width: 1000, max: 84, x: W / 2 });
   void g;
 }
 
@@ -556,7 +557,7 @@ function polygraph(s: S) {
   }
   lyric(s, q.words.slice(0, -1), 250, { width: 800, max: 110, x: 620 });
   sw(s, li, 'LIE?', A(125, 900), 220, 1380, 250, { from: 1.6 });
-  lyric(s, a.words, 880, { width: 1300, max: 100, from: 1.4 });
+  lyric(s, a.words, 845, { width: 1200, max: 92, from: 1.4 });
   void g;
 }
 

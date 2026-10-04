@@ -3,7 +3,7 @@ import { F, measure } from '../engine/type';
 import {
   A, H, W, TAU, backdrop, brainCloud, cam, cityCloud, clamp, clean, cone, drawCloud, ease, figureCloud, fw, grey, gutter, hash, heat,
   hmix, hx, ignite, label, lerp, ln, lookAt, lyric, man, mulberry32, neon, neonWords, on, pool, prog, pulseAt, rain, setFont, snapCam,
-  snapV, sphereCloud, stext, sw, typeOn, womanBust, type Line, type P3, type S, type Word,
+  snapV, sphereCloud, stext, sw, textCloud, typeOn, womanBust, type Line, type P3, type S, type Word,
 } from './noir';
 
 const TEAL = '#35E3E6', RED = '#FF2B4E', AMBER = '#FFA23A', PINK = '#FF3FB4';
@@ -252,6 +252,122 @@ function serious(s: S) {
   void sh;
 }
 
+
+// ================================================================== INSTRUMENTAL: the network (after pdoom's FIG. 11 / Frontier
+// Friday's neurons, in noir points). A dense net as a point cloud: six layers of neurons (each a small sphere of points), the
+// synapses as faint lines. A forward pass fires layer to layer every two beats (neurons light red as the wave passes, sparks
+// run the wires); the camera orbits, then dives through the layers.
+interface NetM { neurons: { x: number; y: number; z: number; li: number }[]; pts: P3[]; edges: [number, number][]; lx: number[] }
+let NET: NetM | null = null;
+function netModel(): NetM {
+  if (NET) return NET;
+  const r = mulberry32(61), sizes = [3, 5, 6, 6, 5, 3], neurons: NetM['neurons'] = [], pts: P3[] = [], edges: [number, number][] = [], lx: number[] = [];
+  const first: number[] = [];
+  sizes.forEach((n, li) => {
+    const x = (li - 2.5) * 380; lx.push(x); first.push(neurons.length);
+    for (let a = 0; a < n; a++) for (let b = 0; b < n; b++) neurons.push({ x, y: (a - (n - 1) / 2) * 82, z: (b - (n - 1) / 2) * 82, li });
+  });
+  neurons.forEach((nu, ni) => { for (let i = 0; i < 26; i++) { const u = r() * 2 - 1, a = r() * TAU, q = Math.sqrt(1 - u * u); pts.push({ x: nu.x + q * Math.cos(a) * 15, y: nu.y + u * 15, z: nu.z + q * Math.sin(a) * 15, k: ni, h: r() }); } });
+  neurons.forEach((nu, ni) => {
+    if (nu.li >= sizes.length - 1) return;
+    const n2 = sizes[nu.li + 1]! ** 2, f = first[nu.li + 1]!;
+    for (let k = 0; k < 3; k++) edges.push([ni, f + Math.floor(r() * n2)]);
+  });
+  NET = { neurons, pts, edges, lx }; return NET;
+}
+/** Forward pass state at t: the wave's position in layers (0..6) and the pass index; one pass per two beats from t0. */
+function passAt(s: S, t: number, t0: number) {
+  const b = s.au.beatAt(t) - s.au.beatAt(t0);
+  if (b < 0) return { wave: -1, pass: -1 };
+  return { wave: ((b % 2) / 2) * 6.4, pass: Math.floor(b / 2) };
+}
+function drawNet(s: S, cm: ReturnType<typeof lookAt>, t0: number, alpha = 1) {
+  const { t, c, g } = s;
+  const N = netModel();
+  const { wave, pass } = passAt(s, t, t0);
+  const act = (ni: number) => {
+    if (pass < 0) return 0;
+    const li = N.neurons[ni]!.li;
+    if (hash(ni, pass, 7) < 0.42) return 0;
+    const d = wave - li;
+    return d < 0 ? 0 : Math.exp(-d * 1.6);
+  };
+  // synapses (and the sparks running them)
+  c.lineWidth = 1;
+  for (const [a, b] of N.edges) {
+    const A_ = N.neurons[a]!, B_ = N.neurons[b]!;
+    const p = proj(cm, A_.x, A_.y, A_.z), q = proj(cm, B_.x, B_.y, B_.z);
+    if (!p || !q) continue;
+    c.strokeStyle = grey(0.7, 0.07 * alpha); c.beginPath(); c.moveTo(p.x, p.y); c.lineTo(q.x, q.y); c.stroke();
+    const u = wave - A_.li;
+    if (pass >= 0 && u > 0 && u < 1 && hash(a, pass, 7) >= 0.42) {
+      const x = lerp(p.x, q.x, u), y = lerp(p.y, q.y, u);
+      g.fillStyle = hx(RED, 0.8 * alpha); g.fillRect(x - 3, y - 3, 6, 6);
+      c.fillStyle = hx('#FFD3DA', alpha); c.fillRect(x - 1.5, y - 1.5, 3, 3);
+    }
+  }
+  drawCloud(s, N.pts, cm, (q) => {
+    const k = act(q.k);
+    return k > 0.08 ? [RED, (0.5 + 0.5 * k) * alpha, 3, 0.7 * k * alpha] : ['#D9D6CF', (0.3 + 0.35 * q.h) * alpha, 2.4, 0];
+  }, { base: 1.3 });
+  // layer captions
+  setFont(c, F.mono(600), 18); c.textAlign = 'center';
+  N.lx.forEach((x, li) => { const p = proj(cm, x, -300, 0); if (!p || p.k < 0.25) return; c.fillStyle = grey(0.6, 0.8 * alpha); c.fillText(`L${li + 1} · ${[9, 25, 36, 36, 25, 9][li]}`, p.x, p.y); });
+  return { pass };
+}
+const proj = (cm: ReturnType<typeof lookAt>, x: number, y: number, z: number) => proj2(cm, x, y, z);
+const sm = (x: number) => { x = clamp(x); return x * x * (3 - 2 * x); };
+function netpass(s: S) {
+  const { t, c, sh } = s;
+  backdrop(s, 0.01, 0.02);
+  cam(s, { x: W / 2, y: H / 2, z: 1, r: 0 }, 0.02);
+  const p = prog(t, sh.start, sh.end);
+  // orbit, then line up behind the input layer and dive through all six
+  const a = lerp(-1.0, 0.35, sm(p / 0.55));
+  const orbit = [Math.sin(a) * 1300, -360, -Math.cos(a) * 1300];
+  const dv = sm((p - 0.62) / 0.38);
+  const dive = [lerp(-1500, 380, dv), lerp(-60, -20, dv), lerp(-260, -90, dv)];
+  const blend = sm((p - 0.5) / 0.14);
+  const pos = orbit.map((v, i) => lerp(v, dive[i]!, blend));
+  const tgt = [lerp(0, pos[0]! + 1200, blend), lerp(0, -20, blend), 0];
+  const cm = lookAt(pos[0]!, pos[1]!, pos[2]!, tgt[0]!, tgt[1]!, tgt[2]!, 950);
+  const { pass } = drawNet(s, cm, sh.start);
+  // the readout
+  setFont(c, F.mono(600), 24); c.textAlign = 'left'; c.fillStyle = grey(0.7);
+  c.fillText(`FORWARD PASS ${String(Math.max(0, pass) + 1).padStart(4, '0')}`, 200, 880);
+  c.fillStyle = hx(RED, 0.9); c.fillText(`ACTIVATION ${(0.4 + 0.5 * hash(pass, 3)).toFixed(4)}`, 200, 912);
+  c.textAlign = 'right'; c.fillStyle = grey(0.55); c.fillText('FIG. 12 — WHERE THE MIND ISN’T', W - 200, 200);
+}
+// IT'S WEIGHTS (the second whisper) — the network's points stream together and form the words.
+function whisper2(s: S) {
+  const { t, c, g } = s;
+  const l = ln(s), its = l.words[0]!, we = lastW(l);
+  backdrop(s, 0.01, 0.02);
+  cam(s, { x: W / 2, y: H / 2, z: 1, r: 0 }, 0);
+  const N = netModel();
+  const cm = lookAt(380, -20, -90, 1580, -20, 0, 950);
+  const T = textCloud('IT’S WEIGHTS', A(125, 900), 165, 5, 21);
+  const k0 = its.start - 0.4, k1 = we.start + 0.3;
+  const n = Math.max(T.length, N.pts.length);
+  // the net still firing behind, fading as its points leave
+  const leave = prog(t, k0, k1);
+  if (leave < 1) drawNet(s, cm, s.sh.start - 4, 1 - leave);
+  for (let i = 0; i < n; i++) {
+    const src = N.pts[i % N.pts.length]!, dst = T[i % T.length]!;
+    const q = proj2(cm, src.x, src.y, src.z);
+    const sx = q ? q.x : W / 2 + (hash(i, 1) - 0.5) * W, sy = q ? q.y : H / 2 + (hash(i, 2) - 0.5) * H;
+    const st = hash(i, 5) * 0.5, k = sm(prog(t, k0 + st, k1 + st));
+    if (k <= 0) continue;
+    const swirl = Math.sin(k * Math.PI) * 140 * (hash(i, 6) - 0.5);
+    const x = lerp(sx, W / 2 + dst.x, k) + swirl, y = lerp(sy, 560 + dst.y, k) - Math.sin(k * Math.PI) * 60;
+    const hot = k > 0.95 ? heat(we, t) : 0;
+    const breathe = k >= 1 ? Math.sin(t * 3 + i) * 1.2 : 0;
+    c.fillStyle = hot > 0.1 ? hmix('#BFF7F8', RED, hot) : hx('#BFF7F8', 0.35 + 0.6 * k); c.fillRect(x - 1.6, y - 1.6 + breathe, 3.2, 3.2);
+    if ((i & 3) === 0) { g.fillStyle = hx(hot > 0.1 ? RED : TEAL, 0.25 * k); g.fillRect(x - 3, y - 3, 6, 6); }
+  }
+  if (t > we.end) label(c, 'whispered.', F.serif(400, true), 40, W / 2, 760, grey(0.6, prog(t, we.end, we.end + 0.6)));
+}
+
 // INSTRUMENTAL — the jazz club: a point-cloud trio under three coloured spots in the haze, the JAZZ sign in script, the camera
 // circling the bandstand.
 function trio(): P3[] {
@@ -266,6 +382,8 @@ function trio(): P3[] {
     for (let i = 0; i < 600; i++) { const f = r(); const x = 20 + 18 * Math.sin(f * 3), y = -150 + f * 90, rr = 3 + f * 10; const a = r() * TAU; out.push({ x: x + Math.cos(a) * rr, y, z: 30 + Math.sin(a) * rr, k: 11, h: r() }); }
     // piano: a box with a lid
     for (let i = 0; i < 2200; i++) { const f = r(); out.push({ x: 300 + (r() - 0.5) * 220, y: -70 - (f < 0.2 ? r() * 40 : 0) - (f > 0.8 ? 60 + r() * 50 : 0), z: 80 + (r() - 0.5) * 140, k: 12, h: r() }); }
+    // the pianist's hands over the keys
+    for (const sd of [-1, 1]) for (let i = 0; i < 160; i++) out.push({ x: 250 + sd * 40 + (r() - 0.5) * 18, y: -84 + (r() - 0.5) * 8, z: 30 + (r() - 0.5) * 16, k: 13 + (sd > 0 ? 1 : 0), h: r() });
     return out;
   });
 }
@@ -286,8 +404,27 @@ function club(s: S) {
     pool(c, p.x, p.y + 260 * p.k, 200 * p.k + 60, sp.c, 0.25 * sp.a, 0.3);
   });
   const kick = s.au.sample(t).kick;
-  drawCloud(s, trio(), cm, (q, i) => {
-    const sp = q.k < 3 ? spots[q.k]! : q.k === 10 ? spots[0]! : q.k === 11 ? spots[1]! : spots[2]!;
+  // assembly: a stream of points falls from where the whisper hung and builds each player, then his instrument
+  const T0 = sh.start, bph = bp - Math.floor(bp);
+  const P = trio().map((q, i) => {
+    const m = q.k < 3 ? q.k : q.k === 10 ? 0 : q.k === 11 ? 1 : 2;
+    const delay = 0.15 + m * 0.55 + (q.k >= 10 ? 0.45 : 0) + 0.5 * hash(i, 4);
+    const k = sm(prog(t, T0 + delay, T0 + delay + 1.1));
+    let { x, y, z } = q;
+    // playing: bob on the beat, upper bodies sway, the sax rocks, the bass neck hums, the pianist's hands run
+    const bob = -9 * Math.abs(Math.sin(Math.PI * (bph + m * 0.33)));
+    if (q.k < 3 && y < -80) x += Math.sin(t * 2.1 + m * 2) * 7 * ((-y - 80) / 110);
+    if (q.k === 11) { const ang = 0.22 * Math.sin(t * 2.3) - 0.12 * kick, dx = x - 20, dy = y + 150; x = 20 + dx * Math.cos(ang) - dy * Math.sin(ang); y = -150 + dx * Math.sin(ang) + dy * Math.cos(ang); }
+    if (q.k === 10 && y < -130) x += Math.sin(t * 47 + i) * 2.5 * (0.3 + kick);
+    if (q.k >= 13) { x += Math.sin(t * 9 + (q.k - 13) * 2.4) * 34; y += -6 * Math.abs(Math.sin(t * 9 + q.k * 1.7)); }
+    y += bob;
+    const sx = (hash(i, 1) - 0.5) * 700, sy = -700 - hash(i, 2) * 300, sz = (hash(i, 3) - 0.5) * 300;
+    return { x: lerp(sx, x, k), y: lerp(sy, y, k) - Math.sin(k * Math.PI) * 80, z: lerp(sz, z, k), k: q.k, h: k < 1 ? -k : q.h };
+  });
+  drawCloud(s, P, cm, (q, i) => {
+    const m = q.k < 3 ? q.k : q.k === 10 ? 0 : q.k === 11 ? 1 : 2;
+    const sp = spots[m]!;
+    if (q.h < 0) return [TEAL, 0.7, 2.4, 0.3]; // still streaming in
     const instr = q.k >= 10;
     const a = (0.35 + 0.45 * q.h) * (0.5 + 0.5 * sp.a);
     if (instr && hash(i, 3) > 0.7) return [sp.c, 0.8 * sp.a, 2.6, 0.3 * sp.a + 0.3 * kick];
@@ -547,5 +684,5 @@ function theEnd(s: S) {
 }
 
 export const C_SHOTS: Record<string, (s: S) => void> = {
-  xray, current, brain, mirror, phone, clay, serious, club, signbuild, meatweights, meet, ecg, sky, talk, beacons, hello, theEnd,
+  netpass, whisper2, xray, current, brain, mirror, phone, clay, serious, club, signbuild, meatweights, meet, ecg, sky, talk, beacons, hello, theEnd,
 };
