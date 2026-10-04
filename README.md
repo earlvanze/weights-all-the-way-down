@@ -86,7 +86,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # numpy, Pi
 
 ## Weights All the Way Down — kinetic noir (1080p, `kinetic/`)
 
-A rebuild of the noir video on the [kinetic-typography template](../kinetic-template): 1920×1080, every sung word timed
+A rebuild of the noir video on the [kinetic-typography template](../kinetic-template), delivered at native 2.39:1 (1920×804, each composition fit at 0.8 so nothing is cropped), every sung word timed
 and landing on its onset, ~50 shots instead of 9 scenes.
 
 - **Timing:** word-level, from the vocal stem (`kinetic/data/lyrics.json`). Evidence and pins are in
@@ -103,7 +103,7 @@ and landing on its onset, ~50 shots instead of 9 scenes.
 ```sh
 cd kinetic
 (cd app && bun scripts/render.ts sheet --cuts --cols 5 --out ../out/wip/sheet.png)   # contact sheet
-./review.sh v2                                     # out/review/v4-half.mp4 (fast, 960x540)
+./review.sh v2                                     # out/review/v5-half.mp4 (fast, 960x402)
 ./render-full.sh weights-all-the-way-down-kinetic.mp4   # final: motion blur, QA
 ```
 

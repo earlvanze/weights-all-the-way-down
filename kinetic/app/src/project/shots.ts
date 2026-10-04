@@ -1,6 +1,6 @@
 // Project shots for "Weights All the Way Down" (noir jazz remix). Every shot is wrapped in the noir finish: a silver
-// black-and-white world where only light has colour, film grain and gate weave, and the 2.39:1 letterbox.
-import { H, W, clamp, hash, letterbox, prog, type S } from './noir';
+// black-and-white world where only light has colour, film grain and gate weave; delivered at 2.39:1 (1920x804, see FIT in noir.ts).
+import { H, W, clamp, fitOff, fitOn, hash, prog, type S } from './noir';
 import { scaleContext2D } from '../engine/gl';
 import { A_SHOTS } from './shots-a';
 import { B_SHOTS } from './shots-b';
@@ -14,10 +14,12 @@ function finish(fn: (s: S) => void) {
     // projector flicker and gate weave (shots that shake override it)
     s.post.exposure = 1 + 0.025 * Math.sin(t * 47) * Math.sin(t * 13);
     s.post.shake = [0.6 * Math.sin(t * 3.1), 1.1 * Math.sin(t * 5.3)];
-    fn(s);
-    carryOver(s);
+    fitOn(s.c); fitOn(s.g);
+    try {
+      fn(s);
+      carryOver(s);
+    } finally { fitOff(s.c); fitOff(s.g); }
     filmDamage(s);
-    if (!s.sh.o.noBox) letterbox(s, s.sh.o.box ?? 1);
     // fade from black at the very top of the film
     if (t < 0.9) s.post.fade = 1 - prog(t, 0, 0.9);
   };

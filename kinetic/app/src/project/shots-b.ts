@@ -301,7 +301,8 @@ function drawer(s: S) {
   c.fillStyle = grey(0.3); c.beginPath(); c.moveTo(cx - wd / 2, top); c.lineTo(cx + wd / 2, top); c.lineTo(cx + wd / 2 + 60, top - 40); c.lineTo(cx - wd / 2 + 60, top - 40); c.closePath(); c.fill();
   c.fillStyle = grey(0.14); c.beginPath(); c.moveTo(cx + wd / 2, top); c.lineTo(cx + wd / 2 + 60, top - 40); c.lineTo(cx + wd / 2 + 60, top + dh * 3 - 20); c.lineTo(cx + wd / 2, top + dh * 3 + 20); c.closePath(); c.fill();
   const out = prog(t, dr.start - 0.05, dr.start + 0.22, ease.outBack);
-  for (let i = 0; i < 3; i++) {
+  // closed drawers first, the pulled-out top drawer last (it comes toward the camera, in front of the others)
+  for (const i of [1, 2, 0]) {
     const y = top + 10 + i * dh, ext = i === 0 ? out : 0;
     const sc = 1 + ext * 0.2, dy = ext * 70;
     const x0 = cx - (wd - 30) * sc / 2, w0 = (wd - 30) * sc;

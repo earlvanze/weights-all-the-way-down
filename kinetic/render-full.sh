@@ -25,5 +25,5 @@ while python3 -c "import sys; sys.exit(0 if $from < $DUR - 1e-6 else 1)"; do
   i=$((i+1)); from=$to
 done
 ffmpeg -v error -y -f concat -safe 0 -i "$SEGDIR/list.txt" -c copy "$P/out/final/$BASE.silent.mp4"
-ffmpeg -v error -y -i "$P/out/final/$BASE.silent.mp4" -i "$M" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -movflags +faststart "$P/out/final/$NAME"
+ffmpeg -v error -y -i "$P/out/final/$BASE.silent.mp4" -i "$M" -map 0:v:0 -map 1:a:0 -vf crop=1920:804:0:138 -c:v libx264 -crf 16 -preset slow -pix_fmt yuv420p -c:a aac -b:a 320k -ar 48000 -movflags +faststart "$P/out/final/$NAME"
 "$P/qa.sh" "$P/out/final/$NAME"

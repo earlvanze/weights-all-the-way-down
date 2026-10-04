@@ -31,7 +31,7 @@ export const SECTIONS: Record<string, (occ: number, count: number) => Spec[]> = 
     ['serious', 3],
     ['netpass', 0, { at: 162.84 }], // instrumental: a point-cloud neural net, forward passes on the beat, then a dive
     ['whisper2', 1], // the second IT'S WEIGHTS: the net's points form the words
-    ['club', 0, { at: 174.54 }], // the jazz trio assembles from the stream of points and plays
+    ['club', 0, { at: 173.3 }], // the jazz trio assembles from the stream of points and plays
     ['signbuild', 0, { at: 179.19 }], // the drum build: the rooftop sign is bent tube by tube
   ],
   final: () => [['meatweights', 1], ['meet', 1], ['ecg', 2], ['sky', 1], ['talk', 1]],

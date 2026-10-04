@@ -14,7 +14,7 @@ j = json.load(open(f'{Q}/ffprobe.json')); v = next(s for s in j['streams'] if s[
 num, den = map(int, v['r_frame_rate'].split('/')); fps = num / den
 md = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', M]))
 vd = NF / fps; dec = open(f'{Q}/decode.txt').read().strip()
-ok = v['width'] == 1920 and v['height'] == 1080 and v['codec_name'] == 'h264' and a['codec_name'] == 'aac' and int(a['channels']) == 2 and abs(vd - md) <= 1 / fps + 1e-6 and not dec
+ok = v['width'] == 1920 and v['height'] == 804 and v['codec_name'] == 'h264' and a['codec_name'] == 'aac' and int(a['channels']) == 2 and abs(vd - md) <= 1 / fps + 1e-6 and not dec
 r = f"""# QA — {V.split('/')[-1]}
 
 | check | result |

@@ -408,8 +408,8 @@ function club(s: S) {
   const T0 = sh.start, bph = bp - Math.floor(bp);
   const P = trio().map((q, i) => {
     const m = q.k < 3 ? q.k : q.k === 10 ? 0 : q.k === 11 ? 1 : 2;
-    const delay = 0.15 + m * 0.55 + (q.k >= 10 ? 0.45 : 0) + 0.5 * hash(i, 4);
-    const k = sm(prog(t, T0 + delay, T0 + delay + 1.1));
+    const delay = 0.05 + m * 0.35 + (q.k >= 10 ? 0.3 : 0) + 0.4 * hash(i, 4);
+    const k = sm(prog(t, T0 + delay, T0 + delay + 0.9));
     let { x, y, z } = q;
     // playing: bob on the beat, upper bodies sway, the sax rocks, the bass neck hums, the pianist's hands run
     const bob = -9 * Math.abs(Math.sin(Math.PI * (bph + m * 0.33)));

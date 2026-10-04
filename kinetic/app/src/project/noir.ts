@@ -90,14 +90,14 @@ export function cone(s: S, x: number, y: number, ang: number, spread: number, le
   }
 }
 /** Rain: slanted streaks in screen space (deterministic, falls with t). */
-export function rain(s: S, n = 420, a = 0.22, slant = 0.16, seed = 3, tint?: string, speed = 1) {
+export function rain(s: S, n0 = 420, a = 0.22, slant = 0.16, seed = 3, tint?: string, speed = 1) {
   const c = s.c; c.save(); c.setTransform(1, 0, 0, 1, 0, 0);
   c.lineWidth = 1.4; c.lineCap = 'round';
-  const r = mulberry32(seed);
+  const r = mulberry32(seed), n = Math.round(n0 * 1.5);
   c.strokeStyle = tint ? hx(tint, a) : grey(0.85, a);
   c.beginPath();
   for (let i = 0; i < n; i++) {
-    const x0 = r() * (W + 300) - 150, y0 = r() * H, v = (1400 + 900 * r()) * speed, l = 18 + 40 * r();
+    const x0 = r() * (W * 1.5 + 300) - W * 0.25 - 150, y0 = r() * H, v = (1400 + 900 * r()) * speed, l = 18 + 40 * r();
     const y = ((y0 + s.t * v) % (H + 80)) - 40, x = x0 + slant * y;
     c.moveTo(x, y); c.lineTo(x - slant * l, y - l);
   }
@@ -648,4 +648,40 @@ export function segWords(s: S, ws: Word[], x: number, y: number, h: number, colo
   for (let i = 0; i < text.length; i++) { if (text[i] === ' ') { map.push(-1); wi++; continue; } map.push(wi); }
   segText(s, text, x, y, h, color, (ci) => { const k = map[ci]!; if (k < 0) return 0; const w = ws[k]!; return s.t < w.start - 0.03 ? 0 : 0.75 + 0.25 * heat(w, s.t); });
   return segW(text, h);
+}
+
+// ------------------------------------------------------------------ 2.39:1 fit (no letterbox)
+/** The film is delivered at 1920x804 (2.39:1, cropped from the 1080 canvas). Every composition is scaled to FIT about the
+ *  frame centre so the 1080-tall layouts fit the band (visible original rows ≈ 40..1040); full-frame background fills are
+ *  extended past the edges so the uncovered margins never show. */
+export const FIT = 0.8;
+export const BAND = Math.round(W / 2.39 / 2) * 2; // 804
+const ORIG = Symbol('fit');
+export function fitOn(ctx: CanvasRenderingContext2D) {
+  const anyc = ctx as any;
+  if (anyc[ORIG]) return;
+  const setT = ctx.setTransform as any, getT = ctx.getTransform, reset = ctx.resetTransform, fill = ctx.fillRect;
+  anyc[ORIG] = { setT, getT, reset, fill };
+  const ox = ((1 - FIT) * W) / 2, oy = ((1 - FIT) * H) / 2;
+  ctx.setTransform = function (this: CanvasRenderingContext2D, a?: any, b?: number, c?: number, d?: number, e?: number, f?: number) {
+    const m = typeof a === 'number' ? { a, b: b!, c: c!, d: d!, e: e!, f: f! } : (a ?? { a: 1, b: 0, c: 0, d: 1, e: 0, f: 0 });
+    return setT.call(this, m.a * FIT, m.b * FIT, m.c * FIT, m.d * FIT, m.e * FIT + ox, m.f * FIT + oy);
+  } as any;
+  ctx.resetTransform = function (this: CanvasRenderingContext2D) { this.setTransform(1, 0, 0, 1, 0, 0); };
+  ctx.getTransform = function (this: CanvasRenderingContext2D) {
+    const m = getT.call(this);
+    return new DOMMatrix([m.a / FIT, m.b / FIT, m.c / FIT, m.d / FIT, (m.e - ox) / FIT, (m.f - oy) / FIT]);
+  };
+  ctx.fillRect = function (this: CanvasRenderingContext2D, x: number, y: number, w: number, h: number) {
+    if (x <= 1 && x + w >= W - 1) { x -= W; w += 2 * W; }
+    if (y <= 1 && y + h >= H - 1) { y -= H; h += 2 * H; }
+    return fill.call(this, x, y, w, h);
+  };
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+}
+export function fitOff(ctx: CanvasRenderingContext2D) {
+  const anyc = ctx as any, o = anyc[ORIG];
+  if (!o) return;
+  ctx.setTransform = o.setT; ctx.getTransform = o.getT; ctx.resetTransform = o.reset; ctx.fillRect = o.fill;
+  delete anyc[ORIG];
 }
