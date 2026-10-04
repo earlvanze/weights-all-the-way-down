@@ -3,7 +3,7 @@
 //   stills:  bun scripts/render.ts stills --t 1.5,23,40.2 [--only id1,id2] [--out dir]
 //   sheet:   bun scripts/render.ts sheet --from 20 --to 35 [--n 12] [--cols 4] [--only ids] [--out file.png]   (or --times a,b,c | --cuts)
 //   perf:    bun scripts/render.ts perf --from 20 --to 25 [--only ids] [--samples 1] [--shutter 0.5]   (avg ms per frame incl. GPU sync and the export's pixel readback)
-//   video:   bun scripts/render.ts video [--from 0] [--to 156.65] [--fps 60] [--crf 16] [--x264 aq-mode=3] [--samples 1] [--shutter 0.5] [--out ../out/video.mp4] [--noaudio]
+//   video:   bun scripts/render.ts video [--from 0] [--to 156.65] [--fps 60] [--crf 16] [--x264 aq-mode=3] [--samples 1] [--shutter 0.5] [--out ../out/video.mp4] [--noaudio] [--crop 2.39]
 //            --samples N averages N sub-frames per frame over shutter×(1/fps): motion blur + temporal AA;
 //            --samples auto picks the count per frame (4, 12, 36, 108 or 324, see Engine.render)
 //   --scale N (all modes): render at N× the 1920x1080 layout (--scale 2 = true 3840x2160); stills are then saved
@@ -121,7 +121,10 @@ async function video(page: Page, from: number, to: number, fps: number, out: str
   // Frames are sRGB (toSRGB in the final pass): convert with the BT.709 matrix and tag the stream,
   // otherwise ffmpeg converts with BT.601 while players and YouTube decode untagged HD as BT.709.
   // scale tags the matrix and range; primaries and transfer need setparams (the -color_* output flags don't reach the stream).
-  args.push('-vf', 'vflip,scale=out_color_matrix=bt709,setparams=color_primaries=bt709:color_trc=bt709', '-c:v', 'libx264', '-preset', opt('preset', 'slow')!, '-crf', crf, '-pix_fmt', 'yuv420p', '-tune', 'grain', '-x264-params', opt('x264', 'aq-mode=3')!);
+  // --crop 2.39: deliver the 2.39:1 band (centre) straight from the encode, so no later re-encode is needed
+  const cropAR = opt('crop') ? +opt('crop')! : 0;
+  const ch = cropAR ? Math.round(OW / cropAR / 2) * 2 : OH, cy = Math.round((OH - ch) / 2);
+  args.push('-vf', `vflip,${cropAR ? `crop=${OW}:${ch}:0:${cy},` : ''}scale=out_color_matrix=bt709,setparams=color_primaries=bt709:color_trc=bt709`, '-c:v', 'libx264', '-preset', opt('preset', 'slow')!, '-crf', crf, '-pix_fmt', 'yuv420p', '-tune', 'grain', '-x264-params', opt('x264', 'aq-mode=3')!);
   if (!flag('noaudio')) args.push('-c:a', 'aac', '-b:a', '320k', '-shortest');
   args.push('-movflags', '+faststart', out);
   const ff = Bun.spawn(args, { stdin: 'pipe', stdout: 'inherit', stderr: 'inherit' });

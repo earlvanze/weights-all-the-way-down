@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Final render: sequential segments (parallel instances time out booting on a single GPU), lossless concat, mux
+# Final render (2.39:1, cropped in the segment encode): sequential segments (parallel instances time out booting on a single GPU), lossless concat, mux
 # with the locked master, then QA. Re-runnable: finished segments are kept.
 #   ./render-full.sh <out-name.mp4> [fps=30] [segment-seconds=60] [max-samples=12]
 set -euo pipefail
@@ -16,7 +16,7 @@ while python3 -c "import sys; sys.exit(0 if $from < $DUR - 1e-6 else 1)"; do
   f=$(printf "%s/seg-%03d.mp4" "$SEGDIR" $i)
   if [ ! -s "$f.ok" ]; then
     for try in 1 2 3; do
-      timeout 14400 bun scripts/render.ts video --from $from --to $to --fps $FPS --samples auto --max-samples $MAXS --shutter 0.5 --crf 16 --preset slow --noaudio --out "$f" > "$f.log" 2>&1 && grep -q "^wrote" <(tr "\r" "\n" < "$f.log") && { echo ok > "$f.ok"; break; }
+      timeout 14400 bun scripts/render.ts video --from $from --to $to --fps $FPS --samples auto --max-samples $MAXS --shutter 0.5 --crf 16 --preset slow --noaudio --crop 2.39 --out "$f" > "$f.log" 2>&1 && grep -q "^wrote" <(tr "\r" "\n" < "$f.log") && { echo ok > "$f.ok"; break; }
       echo "segment $i attempt $try failed (see $f.log)"
     done
     [ -s "$f.ok" ] || exit 1
@@ -25,5 +25,5 @@ while python3 -c "import sys; sys.exit(0 if $from < $DUR - 1e-6 else 1)"; do
   i=$((i+1)); from=$to
 done
 ffmpeg -v error -y -f concat -safe 0 -i "$SEGDIR/list.txt" -c copy "$P/out/final/$BASE.silent.mp4"
-ffmpeg -v error -y -i "$P/out/final/$BASE.silent.mp4" -i "$M" -map 0:v:0 -map 1:a:0 -vf crop=1920:804:0:138 -c:v libx264 -crf 16 -preset slow -pix_fmt yuv420p -c:a aac -b:a 320k -ar 48000 -movflags +faststart "$P/out/final/$NAME"
+ffmpeg -v error -y -i "$P/out/final/$BASE.silent.mp4" -i "$M" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -ar 48000 -movflags +faststart "$P/out/final/$NAME"
 "$P/qa.sh" "$P/out/final/$NAME"

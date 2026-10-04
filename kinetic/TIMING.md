@@ -25,6 +25,6 @@ windows it is bit-identical to the timing master, so all timing still applies:
 - 208.75–210.05 s, the final "Hello.": 70% channel vocoder (98 Hz sawtooth carrier) / 30% voice, +4 dB.
 
 ## Previous take: 5as1fTyRJyE1c2rA (232.84 s)
-`../suno-5as1fTyRJyE1c2rA-timing-master.wav`, cache `analysis/candidates/8c85ebef015b-*` (pins for lines 13–31). It
-sings a different structure; switch back with `./swap-audio.sh ../suno-5as1fTyRJyE1c2rA-timing-master.wav`, but the
+`../noir/audio/suno-5as1fTyRJyE1c2rA-timing-master.wav`, cache `analysis/candidates/8c85ebef015b-*` (pins for lines 13–31). It
+sings a different structure; switch back with `./swap-audio.sh ../noir/audio/suno-5as1fTyRJyE1c2rA-timing-master.wav`, but the
 edit in `script.ts` is now laid out for the new take (breakdown 4 lines, outro 6, no office instrumental).

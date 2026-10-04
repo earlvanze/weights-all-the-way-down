@@ -7,6 +7,6 @@ P=$(cd "$(dirname "$0")" && pwd); NAME=$1; FROM=${2:-0}
 TO=${3:-$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$(cat "$P/analysis/work/MASTER")")}
 export PDOOM_GL_ARGS="${PDOOM_GL_ARGS:---use-angle=gl-egl --ozone-platform=headless}"
 mkdir -p "$P/out/review"; cd "$P/app"
-bun scripts/render.ts video --from "$FROM" --to "$TO" --fps 30 --samples 1 --crf 24 --preset veryfast --out "../out/review/$NAME-full.mp4" > "../out/review/$NAME.log" 2>&1
-ffmpeg -v error -y -i "../out/review/$NAME-full.mp4" -vf crop=1920:804:0:138,scale=960:402 -c:v libx264 -crf 26 -preset veryfast -c:a copy "../out/review/$NAME-half.mp4"
+bun scripts/render.ts video --from "$FROM" --to "$TO" --fps 30 --samples 1 --crf 24 --preset veryfast --crop 2.39 --out "../out/review/$NAME-full.mp4" > "../out/review/$NAME.log" 2>&1
+ffmpeg -v error -y -i "../out/review/$NAME-full.mp4" -vf scale=960:402 -c:v libx264 -crf 26 -preset veryfast -c:a copy "../out/review/$NAME-half.mp4"
 rm -f "../out/review/$NAME-full.mp4"; echo "out/review/$NAME-half.mp4"

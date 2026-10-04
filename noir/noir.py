@@ -4,8 +4,8 @@ A black-and-white world where only light has colour: neon, lamps, CRT glow and
 red string. Every scene is drawn procedurally (PIL + numpy) and driven by the
 audio: beat-tracked swings and cuts, kick/hat pulses, overall level.
 
-    python3 src/noir.py                   # -> out/weights-all-the-way-down-noir.mp4
-    python3 src/noir.py --stills 8,30,70  # preview frames -> out/stills/
+    .venv/bin/python noir/noir.py                   # -> noir/out/weights-all-the-way-down-noir.mp4
+    .venv/bin/python noir/noir.py --stills 8,30,70  # preview frames -> noir/out/stills/
 
 The on-screen words are lines from the song (same lyrics as "Made of Weights",
 suno/made-of-weights.md) staged as noir intertitle cards, one or two per scene in
@@ -22,14 +22,19 @@ from multiprocessing import Pool
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-import audio_features
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))       # noir/
+REPO = os.path.join(HERE, "..")
+sys.path.insert(0, os.path.join(REPO, "src"))           # audio_features is shared with the other renderers
+import audio_features  # noqa: E402
 
 W, H, FPS = 1280, 720, 30
 LB = 92                      # 2.39:1 letterbox bars
 TOP, BOT = LB, H - LB
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-OUT = os.path.join(ROOT, "out")
-AUDIO = os.path.join(ROOT, "suno-5as1fTyRJyE1c2rA-timing-master.wav")
+ROOT = HERE
+OUT = os.path.join(HERE, "out")
+AUDIO = os.path.join(HERE, "audio", "suno-5as1fTyRJyE1c2rA-timing-master.wav")
 FEATURES = os.path.join(OUT, "noir.features.npz")
 
 
